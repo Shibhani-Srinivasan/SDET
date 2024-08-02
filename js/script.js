@@ -1,6 +1,6 @@
 /* ============================== typing animation ============================ */
 var typed = new Typed(".typing", {
-    strings: ["", "Agile Project Manager", "Business Program Manager", "Release Train consultant (RTE)"],
+    strings: ["", "Agile Project Manager", "Business Program Manager"],
     typeSpeed: 100,
     BackSpeed: 60,
     loop: true
