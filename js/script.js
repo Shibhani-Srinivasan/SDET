@@ -1,6 +1,6 @@
 /* ============================== typing animation ============================ */
 var typed = new Typed(".typing", {
-    strings: ["Quality Manager"],//, "Agile Project Manager"],
+    strings: ["","Quality Manager"],//, "Agile Project Manager"],
     /*typeSpeed: 100,
     BackSpeed: 60,
     loop: true*/
