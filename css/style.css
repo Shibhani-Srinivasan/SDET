@@ -793,109 +793,59 @@ hr {
 /* ====== Home Experience Section Styles ====== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap');
 
-.home-experience-section {
-  margin-top: 2.5rem;
-  padding: 2.5rem 0 2rem 0;
-  background: #f8fafd;
+.tools-practices-modern {
+  background: linear-gradient(90deg, #f8fafd 70%, #e9f1fb 100%);
+  padding: 2.5rem 1rem;
+  border-radius: 18px;
+  max-width: 900px;
+  margin: 2rem auto;
   font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
 }
-.experience-columns {
-  display: flex;
-  gap: 2.5rem;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.shaping-works, .tools-practices {
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-  padding: 2.2rem 2rem 2rem 2rem;
-  min-width: 340px;
-  max-width: 540px;
-  flex: 1 1 400px;
-}
-.exp-section-title {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.5rem;
+.tools-practices-modern h2 {
+  font-size: 1.7rem;
   font-weight: 700;
   color: #14213d;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
   letter-spacing: 0.5px;
   border-left: 4px solid #0070f3;
   padding-left: 0.7rem;
 }
-.work-card {
-  background: #f6f8fa;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  padding: 1.3rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.03);
-  transition: box-shadow 0.2s, transform 0.2s;
+.tools-columns-modern {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
 }
-.work-card:hover {
-  box-shadow: 0 8px 32px rgba(0,112,243,0.13);
-  transform: translateY(-2px) scale(1.01);
-}
-.work-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.6rem;
+.tools-cat-modern {
+  display: flex;
+  align-items: center;
   font-size: 1.13rem;
-  color: #0070f3;
-  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 600;
-  letter-spacing: 0.2px;
+  color: #0070f3;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.1em;
 }
-.work-meta {
-  color: #444;
-  font-size: 0.98rem;
+.tools-icon {
+  font-size: 1.3rem;
+  margin-right: 0.7rem;
+  color: #0070f3;
+}
+.tools-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.tools-list-modern {
+  color: #333;
+  font-size: 1.05rem;
   margin-bottom: 0.7rem;
-}
-.work-list {
-  margin: 0.5rem 0 0 1rem;
-  padding: 0;
-  color: #1a1a1a;
-  font-size: 1.01rem;
+  margin-left: 2.1rem;
   line-height: 1.6;
 }
-.work-list > li {
-  margin-bottom: 0.5em;
-}
-.work-list strong {
-  color: #1854b4;
-  font-weight: 600;
-}
-.tools-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.tools-list li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 1.1em;
-  font-size: 1.08rem;
-  line-height: 1.5;
-}
-.tools-cat {
-  font-weight: 700;
-  color: #0070f3;
-  min-width: 130px;
-  display: inline-block;
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-.tools-items {
-  color: #222;
-  font-family: 'Roboto', Arial, sans-serif;
-}
-@media (max-width: 1100px) {
-  .experience-columns {
+@media (max-width: 800px) {
+  .tools-columns-modern {
     flex-direction: column;
-    gap: 2rem;
-    align-items: stretch;
+    gap: 1.5rem;
   }
-  .shaping-works, .tools-practices {
-    max-width: 100%;
-    width: 100%;
+  .tools-practices-modern {
+    padding: 1.5rem 0.5rem;
   }
 }
