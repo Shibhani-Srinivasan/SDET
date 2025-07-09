@@ -1,10 +1,5 @@
 /* ============================== typing animation ============================ */
-var typed = new Typed(".typing", {
-    strings: ["", "Quality Manager"],//, "Agile Project Manager"],
-    typeSpeed: 100,
-    BackSpeed: 60,
-    //loop: true
-})
+
 /* ============================== Aside ============================ */
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
