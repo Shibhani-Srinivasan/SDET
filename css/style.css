@@ -791,93 +791,74 @@ background-color: var(--skin-color);
 border-radius: 50px;
 }
 .shaping-works-section {
-  width: 100%;
-  padding: 2.5rem 0;
-  background: var(--bg-black-100);
+  max-width: 900px;
+  margin: 3rem auto 0 auto;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+  background: #f8fafd;
   border-radius: 18px;
-  box-shadow: 0 2px 16px rgba(48,46,77,0.07);
-  margin-top: 3rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
-
 .shaping-works-section h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--skin-color); /* Accent color */
+  color: #14213d;
   margin-bottom: 2.2rem;
   text-align: left;
   letter-spacing: 0.5px;
-  font-family: "Poppins", sans-serif;
 }
-
 .shaping-work-card {
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 1px 8px rgba(48,46,77,0.06);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
   padding: 1.7rem 1.2rem 1.2rem 1.2rem;
   margin-bottom: 2.2rem;
   transition: box-shadow 0.2s;
 }
-
 .shaping-work-card:last-child {
   margin-bottom: 0;
 }
-
-.work-title {
+.shaping-work-card h3 {
   font-size: 1.18rem;
-  font-weight: 700;
-  color: var(--skin-color); /* Accent color */
+  font-weight: 600;
+  color: #0070f3;
   margin-bottom: 0.7rem;
-  font-family: "Poppins", sans-serif;
 }
-
 .work-meta {
   font-size: 1rem;
-  color: var(--text-black-700);
+  color: #444;
   margin-bottom: 1.1rem;
-  font-family: "Poppins", sans-serif;
 }
-
 .work-columns {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-bottom: 0.2rem;
 }
-
-.work-block {
+.work-columns > div {
   flex: 1 1 220px;
   min-width: 180px;
-  background: var(--bg-black-50);
+  background: #f6f8fa;
   border-radius: 10px;
   padding: 1rem 0.8rem 0.8rem 0.8rem;
   margin-bottom: 0.5rem;
-  box-shadow: 0 1px 4px rgba(48,46,77,0.03);
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0,112,243,0.03);
 }
-
-.work-block h4 {
+.work-columns h4 {
   font-size: 1.03rem;
   font-weight: 600;
-  color: var(--skin-color); /* Accent color */
+  color: #1854b4;
   margin-bottom: 0.4rem;
-  font-family: "Poppins", sans-serif;
 }
-
-.work-block ul {
-  margin: 0 0 0 1.1rem;
+.work-columns ul {
+  margin: 0 0 0 1rem;
   padding: 0;
-  color: var(--text-black-900);
+  color: #222;
   font-size: 0.98rem;
   line-height: 1.6;
-  font-family: "Poppins", sans-serif;
-  list-style: disc inside;
 }
-
-.work-block li {
+.work-columns li {
   margin-bottom: 0.35em;
 }
-
 @media (max-width: 900px) {
   .shaping-works-section {
     padding: 1.5rem 0.5rem;
@@ -886,7 +867,7 @@ border-radius: 50px;
     flex-direction: column;
     gap: 0.7rem;
   }
-  .work-block {
+  .work-columns > div {
     min-width: 0;
     width: 100%;
   }
