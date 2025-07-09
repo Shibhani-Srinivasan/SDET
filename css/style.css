@@ -791,12 +791,12 @@ background-color: var(--skin-color);
 border-radius: 50px;
 }
 .shaping-works-section {
-  max-width: 900px;
-  margin: 3rem auto 0 auto;
-  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+  width: 100%;
+  padding: 2.5rem 0;
   background: #f8fafd;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  margin-top: 3rem;
 }
 .shaping-works-section h2 {
   font-size: 2rem;
@@ -872,4 +872,3 @@ border-radius: 50px;
     width: 100%;
   }
 }
-
