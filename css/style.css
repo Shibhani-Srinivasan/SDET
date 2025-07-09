@@ -791,74 +791,111 @@ hr {
   border-radius: 50px;
 }
 /* ====== Home Experience Section Styles ====== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
 .home-experience-section {
   margin-top: 2.5rem;
-  padding: 2rem 0;
-  background: #fafbfc;
+  padding: 2.5rem 0 2rem 0;
+  background: #f8fafd;
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
 }
 .experience-columns {
   display: flex;
   gap: 2.5rem;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
-.tools-practices, .shaping-works {
-  flex: 1 1 350px;
+.shaping-works, .tools-practices {
   background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  padding: 2rem 1.5rem;
-  min-width: 320px;
-  max-width: 520px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2.2rem 2rem 2rem 2rem;
+  min-width: 340px;
+  max-width: 540px;
+  flex: 1 1 400px;
 }
-.tools-practices h2, .shaping-works h2 {
+.exp-section-title {
+  font-family: 'Montserrat', Arial, sans-serif;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #1a1a1a;
+  font-weight: 700;
+  color: #14213d;
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.5px;
+  border-left: 4px solid #0070f3;
+  padding-left: 0.7rem;
 }
-.tools-practices ul {
-  list-style: disc inside;
-  padding-left: 0;
-  margin: 0;
-}
-.tools-practices li {
-  margin-bottom: 0.7em;
-  font-size: 1.05rem;
-}
-.tools-practices span[title] {
-  cursor: help;
-  border-bottom: 1px dotted #888;
-}
-.shaping-works .work-card {
+.work-card {
   background: #f6f8fa;
   border-radius: 10px;
-  margin-bottom: 1.5rem;
-  padding: 1.2rem 1rem;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.03);
-  transition: box-shadow 0.2s;
+  margin-bottom: 2rem;
+  padding: 1.3rem 1rem 1rem 1rem;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+  transition: box-shadow 0.2s, transform 0.2s;
 }
-.shaping-works .work-card:hover {
-  box-shadow: 0 4px 16px rgba(0,112,243,0.10);
+.work-card:hover {
+  box-shadow: 0 8px 32px rgba(0,112,243,0.13);
+  transform: translateY(-2px) scale(1.01);
 }
-.shaping-works .work-card h3 {
+.work-card h3 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.13rem;
   color: #0070f3;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
-.shaping-works .work-card ul {
+.work-meta {
+  color: #444;
+  font-size: 0.98rem;
+  margin-bottom: 0.7rem;
+}
+.work-list {
   margin: 0.5rem 0 0 1rem;
   padding: 0;
+  color: #1a1a1a;
+  font-size: 1.01rem;
+  line-height: 1.6;
 }
-.shaping-works .work-card li {
-  margin-bottom: 0.4em;
-  font-size: 1rem;
+.work-list > li {
+  margin-bottom: 0.5em;
 }
-@media (max-width: 900px) {
+.work-list strong {
+  color: #1854b4;
+  font-weight: 600;
+}
+.tools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tools-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.1em;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+.tools-cat {
+  font-weight: 700;
+  color: #0070f3;
+  min-width: 130px;
+  display: inline-block;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.tools-items {
+  color: #222;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+@media (max-width: 1100px) {
   .experience-columns {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: stretch;
   }
+  .shaping-works, .tools-practices {
+    max-width: 100%;
+    width: 100%;
+  }
 }
-
