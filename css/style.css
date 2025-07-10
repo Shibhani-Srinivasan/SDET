@@ -790,7 +790,6 @@ margin: -10px;
 background-color: var(--skin-color);
 border-radius: 50px;
 }
-
 .shaping-works-section {
   max-width: 1100px;
   margin: 3rem auto;
@@ -803,10 +802,10 @@ border-radius: 50px;
 }
 
 .shaping-works-section h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;             /* ↑ More presence */
   font-weight: 700;
   color: #000435;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.5rem;         /* ↑ Better visual break */
   text-align: left;
   letter-spacing: 0.5px;
 }
@@ -819,20 +818,24 @@ border-radius: 50px;
   margin-bottom: 2.2rem;
   transition: box-shadow 0.2s;
 }
+
 .shaping-work-card:last-child {
   margin-bottom: 0;
 }
+
 .shaping-work-card h3 {
-  font-size: 1.18rem;
-  font-weight: 600;
-  color: #1854b4;
-  margin-bottom: 0.7rem;
+  font-size: 1.5rem;             /* ↑ Clear section title */
+  font-weight: 700;
+  color: #1e2d45;
+  margin-bottom: 1rem;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
 }
 
 .work-meta {
-  font-size: 1rem;
+  font-size: 1.05rem;            /* ↑ Comfortable */
   color: #444;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.2rem;
 }
 
 .work-columns {
@@ -841,6 +844,7 @@ border-radius: 50px;
   flex-wrap: wrap;
   margin-bottom: 0.2rem;
 }
+
 .work-columns > div {
   flex: 1 1 220px;
   min-width: 180px;
@@ -852,20 +856,22 @@ border-radius: 50px;
 }
 
 .work-columns h4 {
-  font-size: 1.03rem;
+  font-size: 1.15rem;            /* ↑ Subsection header */
   font-weight: 600;
   color: #1854b4;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
 }
+
 .work-columns ul {
   margin: 0 0 0 1rem;
   padding: 0;
   color: #222;
-  font-size: 0.98rem;
-  line-height: 1.6;
+  font-size: 1rem;               /* ↑ Smoother read */
+  line-height: 1.7;
 }
+
 .work-columns li {
-  margin-bottom: 0.35em;
+  margin-bottom: 0.4rem;         /* ↑ Spaced better */
 }
 
 @media (max-width: 900px) {
@@ -887,15 +893,15 @@ border-radius: 50px;
 
 /* 🌟 Updated Pastel Background Variants */
 .shaping-work-card.grey-bg {
-  background-color: #F2F2F2; /* CuCurls – soft grey-green */
+  background-color: #F3F3F3; /* CuCurls – soft grey-green */
 }
 
 .shaping-work-card.green-bg {
-  background-color: #F4F4F4; /* Leather Biz – mint teal */
+  background-color: #F3F3F3; /* Leather Biz – mint teal */
 }
 
 .shaping-work-card.pink-bg {
-  background-color: #F6F6F6; /* Mystique – powder blue (new pink section) */
+  background-color: #F3F3F3; /* Mystique – powder blue (new pink section) */
 }
 
 /* Optional: Adjusted header colors to blend better */
