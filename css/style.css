@@ -862,16 +862,18 @@ border-radius: 50px;
   margin-bottom: 0.6rem;
 }
 
+
 .work-columns ul {
   margin: 0 0 0 1rem;
   padding: 0;
   color: #222;
-  font-size: 1rem;               /* ↑ Smoother read */
-  line-height: 1.7;
+  font-size: 1.05rem;       /* ↑ from 1rem to 1.05rem */
+  line-height: 1.8;         /* ↑ better spacing between lines */
+  list-style-type: disc;
 }
 
 .work-columns li {
-  margin-bottom: 0.4rem;         /* ↑ Spaced better */
+  margin-bottom: 0.6rem;    /* ↑ more breathing room between points */
 }
 
 @media (max-width: 900px) {
