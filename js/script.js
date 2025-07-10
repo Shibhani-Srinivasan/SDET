@@ -1,8 +1,8 @@
 /* ============================== typing animation ============================ */
 var typed = new Typed(".typing", {
-    strings: ["","Quality Manager"],//, "Agile Project Manager"],
-    /*typeSpeed: 100,
-    BackSpeed: 60,
+    strings: ["","Agile Project Manager", "Systems Thinker with a Creative Spine"],
+    /*typeSpeed: 150,
+    BackSpeed: 100,
     loop: true*/
 })
 /* ============================== Aside ============================ */
