@@ -858,7 +858,7 @@ border-radius: 50px;
 .work-columns h4 {
   font-size: 1.15rem;            /* ↑ Subsection header */
   font-weight: 600;
-  color: #ec1839;
+  color: #192841;
   margin-bottom: 0.6rem;
 }
 
@@ -893,7 +893,6 @@ border-radius: 50px;
   }
 }
 
-/* 🌟 Updated Pastel Background Variants */
 .shaping-work-card.grey-bg {
   background-color: #F3F3F3; /* CuCurls – soft grey-green */
 }
