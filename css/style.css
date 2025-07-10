@@ -884,31 +884,29 @@ border-radius: 50px;
     width: 100%;
   }
 }
-
-/* 🌟 Pastel background variants for shaping-work-card blocks */
+/* 🌟 Updated Pastel Background Variants */
 .shaping-work-card.grey-bg {
-  background-color: #f4f4f4; /* light neutral grey */
-  border-left: 4px solid #ccc;
+  background-color: #E5E9E4; /* CuCurls – soft grey-green */
+  border-left: 4px solid #BCC2BB;
 }
 
 .shaping-work-card.green-bg {
-  background-color: #e8f6f0; /* soft pastel mint green */
-  border-left: 4px solid #6abf8f;
+  background-color: #F3F3F3; /* Leather Biz – mint teal */
+  border-left: 4px solid #89B5AC;
 }
 
 .shaping-work-card.pink-bg {
-  background-color: #fff0f4; /* delicate pastel pink */
-  border-left: 4px solid #f28ea9;
+  background-color: #D5E4F9; /* Mystique – powder blue (new pink section) */
+  border-left: 4px solid #A5BFE9;
 }
 
-/* Optional: style section headers for clarity */
+/* Optional: Adjusted header colors to blend better */
 .shaping-work-card.grey-bg h3 {
-  color: #3c3c3c;
+  color: #333833;
 }
 .shaping-work-card.green-bg h3 {
-  color: #2e7d5e;
+  color: #245E50;
 }
 .shaping-work-card.pink-bg h3 {
-  color: #d74273;
+  color: #345A8A;
 }
-
