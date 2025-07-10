@@ -886,7 +886,7 @@ border-radius: 50px;
 }
 /* 🌟 Updated Pastel Background Variants */
 .shaping-work-card.grey-bg {
-  background-color: #ECF9FF; /* CuCurls – soft grey-green */
+  background-color: #F9F3F3; /* CuCurls – soft grey-green */
 }
 
 .shaping-work-card.green-bg {
@@ -894,7 +894,7 @@ border-radius: 50px;
 }
 
 .shaping-work-card.pink-bg {
-  background-color: #FFEEEE; /* Mystique – powder blue (new pink section) */
+  background-color: #FFF8F3; /* Mystique – powder blue (new pink section) */
 }
 
 /* Optional: Adjusted header colors to blend better */
