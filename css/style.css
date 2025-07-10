@@ -885,4 +885,30 @@ border-radius: 50px;
   }
 }
 
+/* 🌟 Pastel background variants for shaping-work-card blocks */
+.shaping-work-card.grey-bg {
+  background-color: #f4f4f4; /* light neutral grey */
+  border-left: 4px solid #ccc;
+}
+
+.shaping-work-card.green-bg {
+  background-color: #e8f6f0; /* soft pastel mint green */
+  border-left: 4px solid #6abf8f;
+}
+
+.shaping-work-card.pink-bg {
+  background-color: #fff0f4; /* delicate pastel pink */
+  border-left: 4px solid #f28ea9;
+}
+
+/* Optional: style section headers for clarity */
+.shaping-work-card.grey-bg h3 {
+  color: #3c3c3c;
+}
+.shaping-work-card.green-bg h3 {
+  color: #2e7d5e;
+}
+.shaping-work-card.pink-bg h3 {
+  color: #d74273;
+}
 
