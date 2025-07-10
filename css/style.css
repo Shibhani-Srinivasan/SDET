@@ -790,16 +790,22 @@ margin: -10px;
 background-color: var(--skin-color);
 border-radius: 50px;
 }
-
 .shaping-works-section {
-  width: 100%;
-  max-width: unset;
-  margin: 3rem 2rem 0 2rem; /* side spacing added manually */
-  padding: 2.5rem 2rem;
+  width: 100vw;                   /* span full browser width */
+  position: relative;             /* required for left offset trick */
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  
+  padding: 2.5rem 3rem;
   background: #f6f8fa;
   border-radius: 18px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  box-sizing: border-box;         /* ensure padding behaves correctly */
+  z-index: 1;                     /* stay above background */
 }
+
 .shaping-works-section h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -808,10 +814,11 @@ border-radius: 50px;
   text-align: left;
   letter-spacing: 0.5px;
 }
+
 .shaping-work-card {
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
   padding: 1.7rem 1.2rem 1.2rem 1.2rem;
   margin-bottom: 2.2rem;
   transition: box-shadow 0.2s;
@@ -825,11 +832,13 @@ border-radius: 50px;
   color: #1854b4;
   margin-bottom: 0.7rem;
 }
+
 .work-meta {
   font-size: 1rem;
   color: #444;
   margin-bottom: 1.1rem;
 }
+
 .work-columns {
   display: flex;
   gap: 1.5rem;
@@ -843,8 +852,9 @@ border-radius: 50px;
   border-radius: 10px;
   padding: 1rem 0.8rem 0.8rem 0.8rem;
   margin-bottom: 0.5rem;
-  box-shadow: 0 1px 4px rgba(0,112,243,0.03);
+  box-shadow: 0 1px 4px rgba(0, 112, 243, 0.03);
 }
+
 .work-columns h4 {
   font-size: 1.03rem;
   font-weight: 600;
@@ -862,18 +872,23 @@ border-radius: 50px;
   margin-bottom: 0.35em;
 }
 
-/* Mobile responsiveness stays intact */
 @media (max-width: 900px) {
   .shaping-works-section {
+    width: 100%;                  /* fallback to full container width */
     margin: 2rem 1rem;
+    left: 0;
+    margin-left: 0;
     padding: 1.5rem 1rem;
   }
+
   .work-columns {
     flex-direction: column;
     gap: 0.7rem;
   }
+
   .work-columns > div {
     min-width: 0;
     width: 100%;
   }
 }
+
