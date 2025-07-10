@@ -868,12 +868,12 @@ border-radius: 50px;
   padding: 0;
   color: #222;
   font-size: 1.05rem;       /* ↑ from 1rem to 1.05rem */
-  line-height: 1.8;         /* ↑ better spacing between lines */
+  line-height: 1.4;         /* ↑ better spacing between lines */
   list-style-type: disc;
 }
 
 .work-columns li {
-  margin-bottom: 0.6rem;    /* ↑ more breathing room between points */
+  margin-bottom: 0.3rem;    /* ↑ more breathing room between points */
 }
 
 @media (max-width: 900px) {
