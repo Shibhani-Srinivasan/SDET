@@ -790,6 +790,9 @@ margin: -10px;
 background-color: var(--skin-color);
 border-radius: 50px;
 }
+
+
+
 .shaping-works-section {
   max-width: 900px;
   margin: 3rem auto 0 auto;
@@ -820,7 +823,7 @@ border-radius: 50px;
 .shaping-work-card h3 {
   font-size: 1.18rem;
   font-weight: 600;
-  color: #0070f3;
+  color: #191970;
   margin-bottom: 0.7rem;
 }
 .work-meta {
