@@ -2,8 +2,8 @@
 var typed = new Typed(".typing", {
     strings: ["","Agile Project Manager", "Systems Thinker with a Creative Spine"],
     typeSpeed: 30,
-    BackSpeed: 30,
-    backDelay: 500,   
+    BackSpeed: 50,
+    backDelay: 1000,   
     loop: true
 })
 /* ============================== Aside ============================ */
