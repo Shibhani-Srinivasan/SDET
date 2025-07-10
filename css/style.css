@@ -867,7 +867,7 @@ border-radius: 50px;
   margin: 0 0 0 1rem;
   padding: 0;
   color: #222;
-  font-size: 1.05rem;       /* ↑ from 1rem to 1.05rem */
+  font-size: 1.15rem;       /* ↑ from 1rem to 1.05rem */
   line-height: 1.4;         /* ↑ better spacing between lines */
   list-style-type: disc;
 }
