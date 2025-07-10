@@ -797,14 +797,14 @@ border-radius: 50px;
   max-width: 900px;
   margin: 3rem auto 0 auto;
   padding: 2.5rem 1.5rem 2.5rem 1.5rem;
-  background: #000435;
+  background: #f6f8fa;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
 .shaping-works-section h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #DC143C;
+  color: #000435;
   margin-bottom: 2.2rem;
   text-align: left;
   letter-spacing: 0.5px;
@@ -823,7 +823,7 @@ border-radius: 50px;
 .shaping-work-card h3 {
   font-size: 1.18rem;
   font-weight: 600;
-  color: #023E8A;
+  color: #1854b4;
   margin-bottom: 0.7rem;
 }
 .work-meta {
