@@ -886,15 +886,15 @@ border-radius: 50px;
 }
 /* 🌟 Updated Pastel Background Variants */
 .shaping-work-card.grey-bg {
-  background-color: #F9F3F3; /* CuCurls – soft grey-green */
+  background-color: #F2F2F2; /* CuCurls – soft grey-green */
 }
 
 .shaping-work-card.green-bg {
-  background-color: #F3F3F3; /* Leather Biz – mint teal */
+  background-color: #F4F4F4; /* Leather Biz – mint teal */
 }
 
 .shaping-work-card.pink-bg {
-  background-color: #FFF8F3; /* Mystique – powder blue (new pink section) */
+  background-color: #F6F6F6; /* Mystique – powder blue (new pink section) */
 }
 
 /* Optional: Adjusted header colors to blend better */
@@ -906,4 +906,13 @@ border-radius: 50px;
 }
 .shaping-work-card.pink-bg h3 {
   color: #000435;
+}
+
+.shaping-work-card h3 {
+  font-size: 1.4rem;          /* Bigger and cleaner */
+  font-weight: 700;           /* Stronger visual weight */
+  color: #1e2d45;             /* Deeper shade for clarity */
+  margin-bottom: 0.85rem;     /* Add some breathing space */
+  letter-spacing: 0.3px;      /* Slight spacing for polish */
+  line-height: 1.3;           /* Better height balance */
 }
