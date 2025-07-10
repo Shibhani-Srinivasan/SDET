@@ -1,9 +1,9 @@
 /* ============================== typing animation ============================ */
 var typed = new Typed(".typing", {
     strings: ["","Agile Project Manager", "Systems Thinker with a Creative Spine"],
-    /*typeSpeed: 150,
+    typeSpeed: 150,
     BackSpeed: 100,
-    loop: true*/
+    loop: true
 })
 /* ============================== Aside ============================ */
 const nav = document.querySelector(".nav"),
