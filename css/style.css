@@ -858,7 +858,7 @@ border-radius: 50px;
 .work-columns h4 {
   font-size: 1.15rem;            /* ↑ Subsection header */
   font-weight: 600;
-  color: #1854b4;
+  color: #ec1839;
   margin-bottom: 0.6rem;
 }
 
@@ -867,7 +867,7 @@ border-radius: 50px;
   margin: 0 0 0 1rem;
   padding: 0;
   color: #222;
-  font-size: 1.10rem;       /* ↑ from 1rem to 1.05rem */
+  font-size: 1.08rem;       /* ↑ from 1rem to 1.05rem */
   line-height: 1.4;         /* ↑ better spacing between lines */
   list-style-type: disc;
 }
