@@ -906,7 +906,7 @@ border-radius: 50px;
 .work-columns > div {
   flex: 1 1 220px;
   min-width: 180px;
-  background: #fbf8f3;
+  background: #fefcff;
   border-radius: 10px;
   padding: 1rem 0.8rem 0.8rem 0.8rem;
   margin-bottom: 0.5rem;
@@ -1029,12 +1029,12 @@ border-radius: 50px;
 }
 
 /* Color themes */
-.pastel-blue    { background: #faeaea; }
-.pastel-yellow  { background: #f8e0e0; }
-.pastel-mint    { background: #f6d6d6; }
-.pastel-pink    { background: #faeaea; }
-.pastel-lavender{ background: #f8e0e0; }
-.pastel-green   { background: #f6d6d6; }
+.pastel-blue    { background: #fcf4f4; }
+.pastel-yellow  { background: #fbefef; }
+.pastel-mint    { background: #faeaea; }
+.pastel-pink    { background: #fcf4f4; }
+.pastel-lavender{ background: #fbefef; }
+.pastel-green   { background: #faeaea; }
 
 /* Responsive */
 @media (max-width: 768px) {
