@@ -66,7 +66,7 @@ disabled />
 <a href="#about"><i class="fa fa-user"></i> About</a>
 </li>
 <li>
-<a href="#services"><i class="fa fa-list"></i>Skills</a>
+<a href="#services"><i class="fa fa-list"></i>Tools & Practices</a>
 </li>
 <li>
 <a href="#portfolio"><i class="fa fa-briefcase"></i>Projects</a>
@@ -267,112 +267,147 @@ class="btn hire-me"
 </div>
 </div>
 </div>
-
-<!-- ===== Skills Section Start ===== -->
-<div class="skill padd-15">
-  <h2>Skills</h2>
+<section class="section">
+  <h3 class="section-title">Skills</h3>
+<div class="skills-grid">
+<div class="skill-card">
+<h4>Bridge</h4>
+<div class="skill-tags">
+<span>Stakeholder Alignment</span>
+<span>Dev–QA Handoffs</span>
+<span>Feature Walkthroughs</span>
+<span>Sprint Demos</span>
 </div>
-<div class="row skills-grid padd-15">
-  <div class="skill-card">
-    <h4>Delivery & PM</h4>
-    <div class="bubble-wrap">
-      <span class="bubble">Notion</span>
-      <span class="bubble">JIRA</span>
-      <span class="bubble">Google Docs</span>
-      <span class="bubble">Trello</span>
-      <span class="bubble">Agile ceremonies</span>
-    </div>
-  </div>
-  <div class="skill-card">
-    <h4>Visual & Content</h4>
-    <div class="bubble-wrap">
-      <span class="bubble">Canva</span>
-      <span class="bubble">VN</span>
-      <span class="bubble">CapCut</span>
-      <span class="bubble">Figma (basic)</span>
-      <span class="bubble">Balsamiq</span>
-    </div>
-  </div>
-  <div class="skill-card">
-    <h4>Communication</h4>
-    <div class="bubble-wrap">
-      <span class="bubble">Loom</span>
-      <span class="bubble">Slack</span>
-      <span class="bubble">Zoom</span>
-      <span class="bubble">Docs</span>
-      <span class="bubble">Client Demos</span>
-    </div>
-  </div>
-  <div class="skill-card">
-    <h4>Code & Infra</h4>
-    <div class="bubble-wrap">
-      <span class="bubble">GitHub</span>
-      <span class="bubble">Vercel</span>
-      <span class="bubble">VS Code</span>
-      <span class="bubble">Postman</span>
-    </div>
-  </div>
-  <div class="skill-card">
-    <h4>CRM & Thinking</h4>
-    <div class="bubble-wrap">
-      <span class="bubble">Airtable</span>
-      <span class="bubble">Obsidian (second brain)</span>
-      <span class="bubble">Story Mapping</span>
-    </div>
-  </div>
-  <div class="skill-card">
-    <h4>Soft Skills</h4>
-    <div class="bubble-wrap">
-      <span class="bubble">Founder empathy</span>
-      <span class="bubble">Team rituals</span>
-      <span class="bubble">Async clarity</span>
-      <span class="bubble">Feedback loops</span>
-    </div>
-  </div>
 </div>
-<!-- ===== Skills Section End ===== -->
+<div class="skill-card">
+<h4>Delivery</h4>
+<div class="skill-tags">
+<span>Agile</span>
+<span>Scrum</span>
+<span>Sprint Planning</span>
+<span>Jira</span>
+<span>RCA</span>
+<span>Requirements Gathering</span>
+</div>
+</div>
+<div class="skill-card">
+<h4>Dev</h4>
+<div class="skill-tags">
+<span>Java</span>
+<span>JavaScript (basic)</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>Shell Scripting</span>
+</div>
+</div>
+<div class="skill-card">
+<h4>QA</h4>
+<div class="skill-tags">
+<span>Selenium WebDriver</span>
+<span>TestNG</span>
+<span>JUnit</span>
+<span>Cucumber</span>
+<span>Page Object Model (POM)</span>
+<span>Manual Testing</span>
+</div>
+</div>
+<div class="skill-card">
+<h4>Database</h4>
+<div class="skill-tags">
+<span>MySQL</span>
+<span>PostgreSQL</span>
+<span>SQL</span>
+<span>Data Validation</span>
+<span>Query Optimization</span>
+<span>Excel Macros</span>
+</div>
+</div>
+<div class="skill-card">
+<h4>CI/CD</h4>
+<div class="skill-tags">
+<span>Git</span>
+<span>GitHub</span>
+<span>Jenkins</span>
+<span>GitHub Actions</span>
+<span>Build Pipelines</span>
+<span>Deployment Workflows</span>
+</div>
+</div>
+<div class="skill-card">
+<h4>DevOps</h4>
+<div class="skill-tags">
+<span>Branching Strategy</span>
+<span>Merge Conflict Resolution</span>
+<span>Pull Requests</span>
+<span>Environment Config (QA/UAT/Prod)</span>
+</div>
+</div>
+<div class="skill-card">
+<h4>IDEs & Debugging</h4>
+<div class="skill-tags">
+<span>VS Code</span>
+<span>IntelliJ IDEA</span>
+<span>Chrome DevTools</span>
+<span>Terminal</span>
+<span>Local Server Debugging</span>
+</div>
+</div>
+</div>
+</section>
 
 <style>
+.section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: #302e4d;
+  text-align: left;
+  padding-left: 1rem;
+}
+
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 60px 0;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1.5rem;
 }
 
 .skill-card {
-  background: #fefcff;
-  border-left: 4px solid #e3e0e5;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-  height: 100%;
+background-color: #fefcff;
+  padding: 1.25rem 1.5rem;
+border-radius: 16px;
+  border-left: 4px solid #fdf9ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
 }
 
 .skill-card h4 {
-  color: #ec1839;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.05rem;
+color: #ec1839;
   margin-bottom: 0.75rem;
 }
 
-.bubble-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.skill-tags {
+display: flex;
+flex-wrap: wrap;
+gap: 0.5rem;
 }
 
-.bubble {
-  background: #fff;
-  padding: 6px 12px;
-  border-radius: 12px;
-  font-size: 14px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-  white-space: nowrap;
+.skill-tags span {
+background-color: #fff6f9;
+color: #1a1a1a;
+font-size: 0.875rem;
+padding: 0.35rem 0.75rem;
+border-radius: 8px;
+border: 1px solid #fdf9ff;
+  font-family: 'Poppins', sans-serif;
 }
 </style>
-
 
 
 <div class="row">
