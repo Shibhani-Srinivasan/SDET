@@ -268,165 +268,169 @@ class="btn hire-me"
 </div>
 </div>
 <!-- ===== Skills Section Start ===== -->
-<div class="skill padd-15">
+<section class="skills-section padd-15">
   <h3 class="title">Skills</h3>
-  <div class="row skills-grid">
+  <div class="skills-container">
     <div class="skill-card">
       <h4>Bridge</h4>
-      <div class="skill-items">
-        <span class="skill-bubble">Stakeholder Alignment</span>
-        <span class="skill-bubble">Dev–QA Handoffs</span>
-        <span class="skill-bubble">Feature Walkthroughs</span>
-        <span class="skill-bubble">Sprint Demos</span>
+      <div class="skill-tags">
+        <span>Stakeholder Alignment</span>
+        <span>Dev–QA Handoffs</span>
+        <span>Feature Walkthroughs</span>
+        <span>Sprint Demos</span>
       </div>
     </div>
 
     <div class="skill-card">
       <h4>Delivery</h4>
-      <div class="skill-items">
-        <span class="skill-bubble">Agile</span>
-        <span class="skill-bubble">Scrum</span>
-        <span class="skill-bubble">Sprint Planning</span>
-        <span class="skill-bubble">Jira</span>
-        <span class="skill-bubble">RCA</span>
-        <span class="skill-bubble">Requirements Gathering</span>
+      <div class="skill-tags">
+        <span>Agile</span>
+        <span>Scrum</span>
+        <span>Jira</span>
+        <span>Sprint Planning</span>
+        <span>RCA</span>
+        <span>Requirements Gathering</span>
       </div>
     </div>
 
     <div class="skill-card">
       <h4>Dev</h4>
-      <div class="skill-items">
-        <span class="skill-bubble">Java</span>
-        <span class="skill-bubble">JavaScript (basic)</span>
-        <span class="skill-bubble">HTML</span>
-        <span class="skill-bubble">CSS</span>
-        <span class="skill-bubble">Shell Scripting</span>
+      <div class="skill-tags">
+        <span>Java</span>
+        <span>JavaScript (basic)</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Shell Scripting</span>
       </div>
     </div>
 
     <div class="skill-card">
       <h4>QA</h4>
-      <div class="skill-items">
-        <span class="skill-bubble">Selenium WebDriver</span>
-        <span class="skill-bubble">TestNG</span>
-        <span class="skill-bubble">JUnit</span>
-        <span class="skill-bubble">Cucumber</span>
-        <span class="skill-bubble">Page Object Model (POM)</span>
-        <span class="skill-bubble">Manual Testing</span>
+      <div class="skill-tags">
+        <span>Selenium WebDriver</span>
+        <span>TestNG</span>
+        <span>JUnit</span>
+        <span>Cucumber</span>
+        <span>POM</span>
+        <span>Manual Testing</span>
       </div>
     </div>
 
     <div class="skill-card">
       <h4>Database</h4>
-      <div class="skill-items">
-        <span class="skill-bubble">MySQL</span>
-        <span class="skill-bubble">PostgreSQL</span>
-        <span class="skill-bubble">SQL</span>
-        <span class="skill-bubble">Data Validation</span>
-        <span class="skill-bubble">Query Optimization</span>
-        <span class="skill-bubble">Excel Macros</span>
+      <div class="skill-tags">
+        <span>MySQL</span>
+        <span>PostgreSQL</span>
+        <span>SQL</span>
+        <span>Data Validation</span>
+        <span>Query Optimization</span>
+        <span>Excel Macros</span>
       </div>
     </div>
 
     <div class="skill-card">
       <h4>CI/CD</h4>
-      <div class="skill-items">
-        <span class="skill-bubble">Git</span>
-        <span class="skill-bubble">GitHub</span>
-        <span class="skill-bubble">Jenkins</span>
-        <span class="skill-bubble">GitHub Actions</span>
-        <span class="skill-bubble">Build Pipelines</span>
-        <span class="skill-bubble">Deployment Workflows</span>
+      <div class="skill-tags">
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Jenkins</span>
+        <span>GitHub Actions</span>
+        <span>Build Pipelines</span>
+        <span>Deployment Workflows</span>
       </div>
     </div>
 
     <div class="skill-card">
       <h4>DevOps</h4>
-      <div class="skill-items">
-        <span class="skill-bubble">Branching Strategy</span>
-        <span class="skill-bubble">Merge Conflict Resolution</span>
-        <span class="skill-bubble">Pull Requests</span>
-        <span class="skill-bubble">Environment Config</span>
-        <span class="skill-bubble">(QA/UAT/Prod)</span>
+      <div class="skill-tags">
+        <span>Branching Strategy</span>
+        <span>Merge Conflict Resolution</span>
+        <span>Pull Requests</span>
+        <span>Env Config</span>
+        <span>QA/UAT/Prod</span>
       </div>
     </div>
 
     <div class="skill-card">
       <h4>IDEs & Debugging</h4>
-      <div class="skill-items">
-        <span class="skill-bubble">VS Code</span>
-        <span class="skill-bubble">IntelliJ IDEA</span>
-        <span class="skill-bubble">Chrome DevTools</span>
-        <span class="skill-bubble">Terminal</span>
-        <span class="skill-bubble">Local Server Debugging</span>
+      <div class="skill-tags">
+        <span>VS Code</span>
+        <span>IntelliJ</span>
+        <span>Chrome DevTools</span>
+        <span>Terminal</span>
+        <span>Local Debugging</span>
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- ===== Skills Section End ===== -->
 
-<!-- Add this CSS to your existing <style> section -->
 <style>
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-  }
+/* Section spacing */
+.skills-section {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
 
-  @media (max-width: 992px) {
-    .skills-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+/* Grid container */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
 
-  @media (max-width: 576px) {
-    .skills-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+/* Individual card */
+.skill-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #eaeaea;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease-in-out;
+}
 
-  .skill-card {
-    background: #fefcff;
-    border-left: 4px solid #e3e0e5;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-    height: 100%;
-  }
+/* Card hover */
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(236, 24, 57, 0.12);
+  border-color: #ec1839;
+}
 
-  .skill-card h4 {
-    color: #ec1839;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
-  }
+/* Card title */
+.skill-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  color: #ec1839;
+}
 
-  .skill-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
+/* Tag container */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 
-  .skill-bubble {
-    background-color: #f0f0f5;
-    color: #333;
-    padding: 0.35rem 0.75rem;
-    border-radius: 999px;
-    font-size: 13px;
-    border: 1px solid #ccc;
-    transition: background-color 0.3s ease;
-  }
+/* Bubble tags */
+.skill-tags span {
+  background: #f3f3f3;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.2;
+  transition: 0.3s ease;
+}
 
-  .skill-bubble:hover {
-    background-color: #ec1839;
-    color: white;
-  }
-
-  .skill {
-    margin: 80px 0;
-  }
+.skill-tags span:hover {
+  background-color: #ec1839;
+  color: #fff;
+  border-color: #ec1839;
+}
 </style>
 
 
