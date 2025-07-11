@@ -862,7 +862,7 @@ border-radius: 50px;
 .shaping-works-section h2 {
   font-size: 2.2rem;             /* ↑ More presence */
   font-weight: 700;
-  color: #000435;
+  color: #ec1839;
   margin-bottom: 2.5rem;         /* ↑ Better visual break */
   text-align: left;
   letter-spacing: 0.5px;
@@ -1029,12 +1029,12 @@ border-radius: 50px;
 }
 
 /* Color themes */
-.pastel-blue    { background: #fcf4f4; }
-.pastel-yellow  { background: #fbefef; }
-.pastel-mint    { background: #faeaea; }
-.pastel-pink    { background: #fcf4f4; }
-.pastel-lavender{ background: #fbefef; }
-.pastel-green   { background: #faeaea; }
+.pastel-blue    { background: #faeaea; }
+.pastel-yellow  { background: #f9e5e5; }
+.pastel-mint    { background: #f8e0e0; }
+.pastel-pink    { background: #faeaea; }
+.pastel-lavender{ background: #f9e5e5; }
+.pastel-green   { background: #f8e0e0; }
 
 /* Responsive */
 @media (max-width: 768px) {
