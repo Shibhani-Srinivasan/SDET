@@ -319,50 +319,69 @@ color: var(--text-black-700);
   padding: 0 20px;
 }
 
-/* 🖼 Image Container */
-.home .home-img {
-  flex: 1 1 40%;
-  max-width: 40%;
+/* Parent container centers the image block */
+.home {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 0 20px;
+  align-items: flex-start;
+  gap: 2rem; /* space between text and image */
+  flex-wrap: wrap;
 }
 
-/* 🖼 Actual Image Styling */
-.home .home-img img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 400px;
-  border-radius: 5px;
+/* Image block with borders tightly around image */
+.home .home-img {
+  position: relative;
+  width: 240px; /* or use max-width: 100%; for responsiveness */
+  margin: 0 auto;
   display: block;
 }
 
-/* 🔲 L-Corner Effects */
-.home-img::before,
-.home-img::after {
-  content: "";
+.home .home-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* L-corner borders tightly around the image */
+.home .home-img::before,
+.home .home-img::after {
+  content: '';
   position: absolute;
-  height: 60px;
-  width: 60px;
-  border: 8px solid var(--skin-color);
+  width: 40px;
+  height: 40px;
+  border: 3px solid #b2c8e6;
+  pointer-events: none;
 }
 
-.home-img::before {
-  border-bottom: none;
-  border-right: none;
-  left: 0;
+.home .home-img::before {
   top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
 }
 
-.home-img::after {
-  border-top: none;
-  border-left: none;
-  right: 0;
+.home .home-img::after {
   bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
 }
+
+/* Responsive: shrink image and corners on mobile */
+@media (max-width: 600px) {
+  .home .home-img {
+    width: 90vw;
+    max-width: 240px;
+  }
+  .home .home-img::before,
+  .home .home-img::after {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 
 /* About */
 .about .about-content {
