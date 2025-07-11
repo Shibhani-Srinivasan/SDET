@@ -973,48 +973,78 @@ border-radius: 50px;
 .shaping-work-card.pink-bg h3 {
   color: #000435;
 }
+
 .tools-practices-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
   justify-content: center;
+  margin-top: 30px;
+  animation: fadeInUp 0.8s ease-in-out;
 }
 
 .tool-bubble {
   flex: 1 1 30%;
-  min-width: 250px;
+  min-width: 260px;
   max-width: 320px;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  text-align: left;
-  transition: all 0.3s ease;
+  padding: 22px 20px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
+  backdrop-filter: blur(4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-bubble:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
 .tool-bubble h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #192841;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
 }
 
 .tool-items p {
   margin: 6px 0;
   font-size: 15px;
+  font-weight: 400;
   color: #333;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  backdrop-filter: blur(3px);
+  transition: background 0.3s ease;
 }
 
-/* Pastel colors */
-.pastel-blue { background-color: #e3f2fd; }
-.pastel-yellow { background-color: #fff9c4; }
-.pastel-mint { background-color: #e0f2f1; }
-.pastel-pink { background-color: #fce4ec; }
-.pastel-lavender { background-color: #ede7f6; }
-.pastel-green { background-color: #e6ee9c; }
+.tool-items p:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
 
-/* Responsive behavior */
+/* Color themes */
+.pastel-blue    { background: #e3f2fd; }
+.pastel-yellow  { background: #fff9c4; }
+.pastel-mint    { background: #e0f2f1; }
+.pastel-pink    { background: #fce4ec; }
+.pastel-lavender{ background: #ede7f6; }
+.pastel-green   { background: #f1f8e9; }
+
+/* Responsive */
 @media (max-width: 768px) {
   .tool-bubble {
     flex: 1 1 100%;
   }
+}
+
+/* Entry animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
