@@ -268,74 +268,89 @@ class="btn hire-me"
 </div>
 </div>
 
+<!-- ===== Skills Section Start ===== -->
 <div class="skill padd-15">
-<h3 class="title">Skills</h3>
-<div class="row">
-<div class="skills-grid">
-<div class="skill-card">
-<h4>Bridge</h4>
-<p>Stakeholder Alignment, Dev–QA Handoffs, Feature Walkthroughs, Sprint Demos</p>
+  <h3 class="title">Skills</h3>
+  <div class="row skills-grid">
+    <div class="skill-card">
+      <h4>Bridge</h4>
+      <p>Stakeholder Alignment, Dev–QA Handoffs, Feature Walkthroughs, Sprint Demos</p>
+    </div>
+    <div class="skill-card">
+      <h4>Delivery</h4>
+      <p>Agile, Scrum, Sprint Planning, Jira, RCA, Requirements Gathering</p>
+    </div>
+    <div class="skill-card">
+      <h4>Dev</h4>
+      <p>Java, JavaScript (basic), HTML, CSS, Shell Scripting</p>
+    </div>
+    <div class="skill-card">
+      <h4>QA</h4>
+      <p>Selenium WebDriver, TestNG, JUnit, Cucumber, Page Object Model (POM), Manual Testing</p>
+    </div>
+    <div class="skill-card">
+      <h4>Database</h4>
+      <p>MySQL, PostgreSQL, SQL, Data Validation, Query Optimization, Excel Macros</p>
+    </div>
+    <div class="skill-card">
+      <h4>CI/CD</h4>
+      <p>Git, GitHub, Jenkins, GitHub Actions, Build Pipelines, Deployment Workflows</p>
+    </div>
+    <div class="skill-card">
+      <h4>DevOps</h4>
+      <p>Branching Strategy, Merge Conflict Resolution, Pull Requests, Environment Config (QA/UAT/Prod)</p>
+    </div>
+    <div class="skill-card">
+      <h4>IDEs & Debugging</h4>
+      <p>VS Code, IntelliJ IDEA, Chrome DevTools, Terminal, Local Server Debugging</p>
+    </div>
+  </div>
 </div>
-<div class="skill-card">
-<h4>Delivery</h4>
-<p>Agile, Scrum, Sprint Planning, Jira, RCA, Requirements Gathering</p>
-</div>
-<div class="skill-card">
-<h4>Dev</h4>
-<p>Java, JavaScript (basic), HTML, CSS, Shell Scripting</p>
-</div>
-<div class="skill-card">
-<h4>QA</h4>
-<p>Selenium WebDriver, TestNG, JUnit, Cucumber, Page Object Model (POM), Manual Testing</p>
-</div>
-<div class="skill-card">
-<h4>Database</h4>
-<p>MySQL, PostgreSQL, SQL, Data Validation, Query Optimization, Excel Macros</p>
-</div>
-<div class="skill-card">
-<h4>CI/CD</h4>
-<p>Git, GitHub, Jenkins, GitHub Actions, Build Pipelines, Deployment Workflows</p>
-</div>
-<div class="skill-card">
-<h4>DevOps</h4>
-<p>Branching Strategy, Merge Conflict Resolution, Pull Requests, Environment Config (QA/UAT/Prod)</p>
-</div>
-<div class="skill-card">
-<h4>IDEs & Debugging</h4>
-<p>VS Code, IntelliJ IDEA, Chrome DevTools, Terminal, Local Server Debugging</p>
-</div>
-</div>
+<!-- ===== Skills Section End ===== -->
+
 <style>
 .skills-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 1.5rem;
-margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skill-card {
-  background-color: #f5f7f8;
-padding: 1rem 1.5rem;
-border-radius: 16px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-transition: transform 0.2s ease;
-}
-
-.skill-card:hover {
-transform: translateY(-5px);
+  background: #fefcff;
+  border-left: 4px solid #e3e0e5;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  height: 100%;
 }
 
 .skill-card h4 {
-margin-bottom: 0.5rem;
-font-size: 1.1rem;
-color: #ec1839;
+  color: #ec1839;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .skill-card p {
-font-size: 0.95rem;
-line-height: 1.5;
-color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
 }
+
 </style>
 
 <div class="row">
