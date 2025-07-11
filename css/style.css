@@ -973,3 +973,42 @@ border-radius: 50px;
 .shaping-work-card.pink-bg h3 {
   color: #000435;
 }
+
+
+.tools-practices-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tool-bubble {
+  flex: 1 1 30%;
+  min-width: 280px;
+  background-color: #f4f4fb; /* pastel base */
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.tool-bubble:hover {
+  transform: translateY(-4px);
+}
+
+.tool-bubble h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937; /* dark slate */
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.tool-bubble .tool-items {
+  font-size: 1.02rem;
+  color: #444;
+  line-height
+
+
+  
