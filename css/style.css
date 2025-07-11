@@ -1029,12 +1029,12 @@ border-radius: 50px;
 }
 
 /* Color themes */
-.pastel-blue    { background: #e3f2fd; }
-.pastel-yellow  { background: #fff9c4; }
-.pastel-mint    { background: #e0f2f1; }
-.pastel-pink    { background: #fce4ec; }
-.pastel-lavender{ background: #ede7f6; }
-.pastel-green   { background: #f1f8e9; }
+.pastel-blue    { background: #fef9f9; }
+.pastel-yellow  { background: #fef6f6; }
+.pastel-mint    { background: #fdf4f4; }
+.pastel-pink    { background: #fdf1f1; }
+.pastel-lavender{ background: #fdeeee; }
+.pastel-green   { background: #fcecec; }
 
 /* Responsive */
 @media (max-width: 768px) {
