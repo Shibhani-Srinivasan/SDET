@@ -973,8 +973,6 @@ border-radius: 50px;
 .shaping-work-card.pink-bg h3 {
   color: #000435;
 }
-
-
 .tools-practices-grid {
   display: flex;
   flex-wrap: wrap;
@@ -986,7 +984,7 @@ border-radius: 50px;
 .tool-bubble {
   flex: 1 1 30%;
   min-width: 280px;
-  background-color: #f4f4fb; /* pastel base */
+  background-color: #f4f4fb;
   border-radius: 20px;
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -1000,15 +998,33 @@ border-radius: 50px;
 .tool-bubble h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #1f2937; /* dark slate */
+  color: #1f2937;
   margin-bottom: 1rem;
   letter-spacing: 0.5px;
 }
 
 .tool-bubble .tool-items {
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   color: #444;
-  line-height
+  line-height: 1.6;
+  word-spacing: 2px;
+}
 
+.pastel-blue    { background-color: #eaf4ff; }
+.pastel-mint    { background-color: #e8fff8; }
+.pastel-yellow  { background-color: #fffbea; }
+.pastel-pink    { background-color: #fef0f6; }
+.pastel-lavender{ background-color: #f4f0ff; }
+.pastel-green   { background-color: #eafaf1; }
 
-  
+@media (max-width: 900px) {
+  .tool-bubble {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tool-bubble {
+    flex: 1 1 100%;
+  }
+}
