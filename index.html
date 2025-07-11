@@ -366,16 +366,30 @@ class="btn hire-me"
 <!-- ===== Skills Section End ===== -->
 
 <style>
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 /* Section spacing */
 .skills-section {
   padding-top: 70px;
   padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Grid container */
+/* Title style */
+.skills-section .title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ec1839;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Grid container for skill cards */
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* fixed 3 columns */
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -384,54 +398,78 @@ class="btn hire-me"
 .skill-card {
   background: #ffffff;
   border-radius: 16px;
-  border: 1px solid #eaeaea;
   padding: 1.5rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   transition: all 0.2s ease-in-out;
 }
 
 /* Card hover */
 .skill-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(236, 24, 57, 0.12);
-  border-color: #ec1839;
+  box-shadow: 0 8px 16px rgba(236, 24, 57, 0.15);
 }
 
 /* Card title */
 .skill-card h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
   color: #ec1839;
 }
 
-/* Tag container */
+/* Tag container: grid for 3 bubbles per row */
 .skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
 }
 
 /* Bubble tags */
 .skill-tags span {
-  background: #f3f3f3;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.85rem;
-  border-radius: 20px;
-  border: 1px solid #ddd;
+  background: #fbeeee;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 12px; /* square with curved edges */
   color: #333;
   font-weight: 500;
-  line-height: 1.2;
-  transition: 0.3s ease;
+  line-height: 1.3;
+  text-align: center;
+  user-select: none;
+  cursor: default;
+  /* No border */
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .skill-tags span:hover {
   background-color: #ec1839;
   color: #fff;
-  border-color: #ec1839;
+}
+
+@media (max-width: 960px) {
+  /* For tablets: 2 columns in container */
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Inside card: 3 bubbles remain 3 per row */
+  .skill-tags {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  /* For mobile: 1 column container */
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  /* Inside card: bubbles 2 per row for better fit */
+  .skill-tags {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>
+
 
 
 <div class="row">
