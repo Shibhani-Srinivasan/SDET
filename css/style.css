@@ -1006,7 +1006,7 @@ border-radius: 50px;
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 12px;
-  color: #0f172a;
+  color: #ec1839;
   text-transform: uppercase;
   letter-spacing: 0.6px;
 }
@@ -1028,15 +1028,17 @@ border-radius: 50px;
   background: rgba(255, 255, 255, 0.6);
 }
 
+
 /* Color themes */
-.pastel-blue    { background: #edbfb7; }
-.pastel-yellow  { background: #e8afa5; }
-.pastel-mint    { background: #e49f93; }
-.pastel-pink    { background: #edbfb7; }
-.pastel-lavender{ background: #e8afa5; }
-.pastel-green   { background: #e49f93; }
+.pastel-blue    { background: #f0f0f5; }
+.pastel-yellow  { background: #f0f0f5; }
+.pastel-mint    { background: #f0f0f5; }
+.pastel-pink    { background: #f0f0f5; }
+.pastel-lavender{ background: #f0f0f5; }
+.pastel-green   { background: #f0f0f5; }
 
 /* Responsive */
+
 @media (max-width: 768px) {
   .tool-bubble {
     flex: 1 1 100%;
