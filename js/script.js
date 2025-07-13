@@ -1,6 +1,6 @@
 /* ============================== typing animation ============================ */
 var typed = new Typed(".typing", {
-    strings: ["","Technical Program Manager – QA Automation", "Systems Thinker with a Creative Spine"],
+    strings: ["","Program Manager – QA Automation", "Systems Thinker with a Creative Spine"],
     typeSpeed: 30,
     BackSpeed: 50,
     backDelay: 1000,   
