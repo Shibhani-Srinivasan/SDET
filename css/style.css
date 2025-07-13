@@ -952,15 +952,15 @@ border-radius: 50px;
 }
 
 .shaping-work-card.grey-bg {
-  background-color: #F3F3F3; /* CuCurls – soft grey-green */
+  background-color: #f7f9fb; /* CuCurls – soft grey-green */
 }
 
 .shaping-work-card.green-bg {
-  background-color: #F3F3F3; /* Leather Biz – mint teal */
+  background-color: #f7f9fb; /* Leather Biz – mint teal */
 }
 
 .shaping-work-card.pink-bg {
-  background-color: #F3F3F3; /* Mystique – powder blue (new pink section) */
+  background-color: #f7f9fb; /* Mystique – powder blue (new pink section) */
 }
 
 /* Optional: Adjusted header colors to blend better */
@@ -1029,12 +1029,12 @@ border-radius: 50px;
 }
 
 /* Color themes */
-.pastel-blue    { background: #faeaea; }
-.pastel-yellow  { background: #f9e5e5; }
-.pastel-mint    { background: #f8e0e0; }
-.pastel-pink    { background: #faeaea; }
-.pastel-lavender{ background: #f9e5e5; }
-.pastel-green   { background: #f8e0e0; }
+.pastel-blue    { background: #fac599; }
+.pastel-yellow  { background: #f9b98f; }
+.pastel-mint    { background: #f8ad85; }
+.pastel-pink    { background: #fac599; }
+.pastel-lavender{ background: #f9b98f; }
+.pastel-green   { background: #f8ad85; }
 
 /* Responsive */
 @media (max-width: 768px) {
