@@ -862,8 +862,8 @@ border-radius: 50px;
 .shaping-works-section h2 {
   font-size: 2rem;             /* ↑ More presence */
   font-weight: 700;
-  color: #060606;
-  margin-bottom: 2.5rem;         /* ↑ Better visual break */
+  color: #ec1839;
+  margin-bottom: 2rem;         /* ↑ Better visual break */
   text-align: left;
   letter-spacing: 0.5px;
 }
