@@ -1228,16 +1228,26 @@ padding: 20px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.shaping-work-card p,
-.work-columns p,
-.work-meta {
+/* Common font styling for all content inside the 3 boxes */
+.work-columns > div p,
+.work-columns > div ul,
+.work-columns > div li {
   font-family: 'Poppins', sans-serif;
   font-size: 1.08rem;
   color: #222;
   line-height: 1.4;
+  margin: 0;
+  padding: 0;
 }
 
+/* Consistent spacing between stacked elements inside each box */
+.work-columns > div > * + * {
+  margin-top: 0.5em;
+}
+
+/* Optional left padding ONLY for the third box ("What I learned" or "Why it matters") */
 .work-columns > div:nth-child(3) p {
   padding-left: 1.2rem;
   margin-top: 0.4rem;
 }
+
