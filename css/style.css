@@ -338,27 +338,7 @@ border-left: 5px solid var(--skin-color);
 border-radius: 0 0 15px 0;
 z-index: 2;
 }
-.timeline-box { /* Parent container for both timelines */ }
-.timeline {
-background: var(--bg-black-100);
-padding: 30px 15px;
-border: 1px solid var(--bg-black-50);
-border-radius: 10px;
-}
-.timeline-item {
-padding-left: 37px;
-padding-bottom: 40px;
-position: relative;
-}
-.timeline-item::before {
-content: "";
-width: 1px;
-height: 100%;
-background: var(--skin-color);
-position: absolute;
-left: 7px;
-top: 0;
-}
+
 .circle-dot {
 height: 15px;
 width: 15px;
