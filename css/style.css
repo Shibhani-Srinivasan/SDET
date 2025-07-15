@@ -906,11 +906,32 @@ margin-bottom: 1.2rem;
 }
 
 .work-columns {
-display: flex;
-gap: 1.5rem;
-flex-wrap: wrap;
-margin-bottom: 0.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  margin-bottom: 1.2rem;
 }
+
+/* First box */
+.work-columns > div:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* Second box */
+.work-columns > div:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Third box - Full width below */
+.work-columns > div:nth-child(3),
+.work-columns .learned-block {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
 
 .work-columns > div {
 flex: 1 1 220px;
