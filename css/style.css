@@ -1228,7 +1228,7 @@ padding: 20px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Common font styling for all content inside the 3 boxes */
+/* Uniform font for all content inside the work columns */
 .work-columns > div p,
 .work-columns > div ul,
 .work-columns > div li {
@@ -1240,12 +1240,19 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding: 0;
 }
 
-/* Consistent spacing between stacked elements inside each box */
+/* Indent bullet lists just like paragraph in 3rd box */
+.work-columns > div ul {
+  padding-left: 1.2rem;
+  margin-left: 0;
+  list-style-position: outside;
+}
+
+/* Consistent vertical spacing between elements in each box */
 .work-columns > div > * + * {
   margin-top: 0.5em;
 }
 
-/* Optional left padding ONLY for the third box ("What I learned" or "Why it matters") */
+/* Indent paragraph in third ("What I learned") box to align with bullets */
 .work-columns > div:nth-child(3) p {
   padding-left: 1.2rem;
   margin-top: 0.4rem;
