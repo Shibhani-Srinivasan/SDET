@@ -353,7 +353,8 @@ color: var(--text-black-700);
     margin-top: 2rem;
   }
 
-  .img-wrapper {
+  .img-wrapper 
+{
     max-width: 250px;
   }
 
