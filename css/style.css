@@ -1228,37 +1228,16 @@ padding: 20px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Make font styling uniform inside each block of the work columns */
-.work-columns > div,
-.work-columns > div p,
-.work-columns > div ul,
-.work-columns > div ul li,
+.shaping-work-card p,
+.work-columns p,
 .work-meta {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.05rem; /* match your list font size */
+  font-size: 1.08rem;
   color: #222;
-  line-height: 1.5;
-  margin: 0;           /* Remove default margins */
-  padding: 0;          /* Remove default paddings */
+  line-height: 1.4;
 }
 
-/* Add consistent vertical spacing between elements */
-.work-columns > div p,
-.work-columns > div ul {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Remove or reduce the left padding on "What I learned" paragraph for alignment */
 .work-columns > div:nth-child(3) p {
-  padding-left: 0; /* or reduce to something like 0.4rem if needed */
-  margin-top: 0.5rem; /* consistent spacing */
+  padding-left: 1.2rem;
+  margin-top: 0.4rem;
 }
-
-/* Optional: add a little padding inside all blocks so content doesn't touch edges */
-.work-columns > div {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-
