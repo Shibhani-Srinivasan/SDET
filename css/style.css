@@ -365,7 +365,6 @@ color: var(--text-black-700);
   }
 }
 
-
 /* TOP-LEFT CORNER DECORATION */
 .home-img::before {
   content: "";
