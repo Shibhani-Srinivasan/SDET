@@ -121,42 +121,46 @@ a {
   font-size: 40px;
 }
 .aside .nav {
-  margin-top: 30px;
-  width: 100%;
+  margin-top: 50px;
   padding: 0;
   list-style: none;
+  width: 100%;
 }
+
 .aside .nav li {
-  margin-bottom: 20px;
+  margin: 0 0 16px 0;
   display: block;
 }
+
 .aside .nav li a {
   display: flex;
   align-items: center;
   width: 100%;
-  color: var(--text-black-900);
-  padding: 12px 20px;
   font-size: 16px;
+  padding: 8px 18px;
+  color: var(--text-black-900);
   font-weight: 600;
-  border-radius: 8px;
-  line-height: 1.3;
-  transition: background 0.2s, color 0.2s;
+  border-radius: 6px;
   text-align: left;
-  background: none;
+  background: transparent;
+  transition: background 0.15s, color 0.15s;
   box-shadow: none;
 }
+
 .aside .nav li a.active,
 .aside .nav li a:hover {
   background: var(--skin-color);
   color: #fff;
 }
+
 .aside .nav li a i {
   margin-right: 12px;
   font-size: 18px;
-  vertical-align: middle;
-  min-width: 24px;
+  min-width: 22px;         /* Ensures icon/text align */
   text-align: center;
+  display: inline-block;
 }
+
 
 /* ==== HOME HERO ==== */
 .home {
