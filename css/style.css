@@ -1060,12 +1060,12 @@ background: rgba(255, 255, 255, 0.6);
 
 
 /* Color themes */
-.pastel-blue    { background: #f9e5e5; }
-.pastel-yellow  { background: #faeaea; }
-.pastel-mint    { background: #f8e0e0; }
-.pastel-pink    { background: #fdefe1; }
+.pastel-blue    { background: #f2e3ea; }
+.pastel-yellow  { background: #f2e3ea; }
+.pastel-mint    { background: #f2e3ea; }
+.pastel-pink    { background: #f2e3ea; }
 .pastel-lavender{ background: #f2e3ea; }
-.pastel-green   { background: #f9f1ef; }
+.pastel-green   { background: #f2e3ea; }
 
 /* Responsive */
 
