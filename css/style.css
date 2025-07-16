@@ -303,94 +303,94 @@ font-size: 20px;
 color: var(--text-black-700);
 }
 .home .home-img {
-  flex: 0 0 40%;
-  max-width: 40%;
-  text-align: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+flex: 0 0 40%;
+max-width: 40%;
+text-align: center;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .home .home-img {
-  flex: 0 0 40%;
-  max-width: 40%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+flex: 0 0 40%;
+max-width: 40%;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .img-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  max-width: 320px;
+position: relative;
+display: inline-block;
+width: 100%;
+max-width: 320px;
 }
 
 .img-wrapper img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  z-index: 1;
+width: 100%;
+height: auto;
+display: block;
+border-radius: 10px;
+z-index: 1;
 }
 
 .l-corner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  border-top: 5px solid var(--skin-color);
-  border-left: 5px solid var(--skin-color);
-  border-radius: 0 0 15px 0;
-  z-index: 2;
+position: absolute;
+top: 0;
+left: 0;
+width: 60px;
+height: 60px;
+border-top: 5px solid var(--skin-color);
+border-left: 5px solid var(--skin-color);
+border-radius: 0 0 15px 0;
+z-index: 2;
 }
 
 @media (max-width: 768px) {
-  .home .home-img {
-    max-width: 100%;
-    margin-top: 2rem;
-  }
+.home .home-img {
+max-width: 100%;
+margin-top: 2rem;
+}
 
-  .img-wrapper {
-    max-width: 250px;
-  }
+.img-wrapper {
+max-width: 250px;
+}
 
-  .l-corner {
-    width: 40px;
-    height: 40px;
-    border-top-width: 4px;
-    border-left-width: 4px;
-  }
+.l-corner {
+width: 40px;
+height: 40px;
+border-top-width: 4px;
+border-left-width: 4px;
+}
 }
 
 
 /* TOP-LEFT CORNER DECORATION */
 .home-img::before {
-  content: "";
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  border-top: 10px solid var(--skin-color);
-  border-left: 10px solid var(--skin-color);
-  top: -20px;
-  left: -20px;
-  z-index: 0;
+content: "";
+position: absolute;
+height: 80px;
+width: 80px;
+border-top: 10px solid var(--skin-color);
+border-left: 10px solid var(--skin-color);
+top: -20px;
+left: -20px;
+z-index: 0;
 }
 
 /* BOTTOM-RIGHT CORNER DECORATION — FIXED */
 .home-img::after {
-  content: "";
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  border-bottom: 10px solid var(--skin-color);
-  border-right: 10px solid var(--skin-color);
-  bottom: -20px;
-  right: -20px;
-  z-index: 0;
+content: "";
+position: absolute;
+height: 80px;
+width: 80px;
+border-bottom: 10px solid var(--skin-color);
+border-right: 10px solid var(--skin-color);
+bottom: -20px;
+right: -20px;
+z-index: 0;
 }
 
 /* About */
@@ -413,11 +413,11 @@ color: var(--skin-color);
 }
 
 @media (max-width: 767px) {
-  .about .about-content .education,
-  .about .about-content .experience {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+.about .about-content .education,
+.about .about-content .experience {
+flex: 0 0 100%;
+max-width: 100%;
+}
 }
 .about .about-content .about-text p {
 font-size: 16px;
@@ -496,9 +496,9 @@ line-height: 40px;
 }
 .about .about-content .education,
 .about .about-content .experience {
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-top: 30px;
+flex: 0 0 50%;
+max-width: 50%;
+margin-top: 30px;
 }
 
 .about .about-content h3.title {
@@ -807,7 +807,7 @@ font-weight: 300;
 }
 /* @media (max-width: 767px) {
 * {
- font-size: 1px;
+font-size: 1px;
 }
 }
 
@@ -906,30 +906,30 @@ margin-bottom: 1.2rem;
 }
 
 .work-columns {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  gap: 1.5rem;
-  margin-bottom: 1.2rem;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto;
+gap: 1.5rem;
+margin-bottom: 1.2rem;
 }
 
 /* First box */
 .work-columns > div:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
+grid-column: 1;
+grid-row: 1;
 }
 
 /* Second box */
 .work-columns > div:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
+grid-column: 2;
+grid-row: 1;
 }
 
 /* Third box - Full width below */
 .work-columns > div:nth-child(3),
 .work-columns .learned-block {
-  grid-column: 1 / span 2;
-  grid-row: 2;
+grid-column: 1 / span 2;
+grid-row: 2;
 }
 
 
@@ -1227,186 +1227,186 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 .work-columns > div p,
 .work-columns > div ul,
 .work-columns > div li {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.08rem;
-  color: #222;
-  line-height: 1.4;
-  margin: 0;
-  padding: 0;
+font-family: 'Poppins', sans-serif;
+font-size: 1.08rem;
+color: #222;
+line-height: 1.4;
+margin: 0;
+padding: 0;
 }
 
 /* Indent bullet lists just like paragraph in 3rd box */
 .work-columns > div ul {
-  padding-left: 1.2rem;
-  margin-left: 0;
-  list-style-position: outside;
+padding-left: 1.2rem;
+margin-left: 0;
+list-style-position: outside;
 }
 
 /* Consistent vertical spacing between elements in each box */
 .work-columns > div > * + * {
-  margin-top: 0.5em;
+margin-top: 0.5em;
 }
 
 /* Indent paragraph in third ("What I learned") box to align with bullets */
 
 /*.my-profession {
-  font-size: 30px;
-  font-weight: 600;
-  margin: 15px 0;
-  line-height: 1.5;
-  align-items: flex-start; /* Better for wrapping behavior on mobile */
+ font-size: 30px;
+ font-weight: 600;
+ margin: 15px 0;
+ line-height: 1.5;
+ align-items: flex-start; /* Better for wrapping behavior on mobile */
 }*/
 
 /* Prevent height shift and ensure consistent spacing */
 /*.typing {
-  display: inline-block;
-  font-size: inherit !important;
-  font-weight: inherit !important;
-  line-height: inherit;
-  min-height: 1.8em;       /* Prevent content bounce */
-  padding-left: 0.25em;    /* Ensures consistent spacing between "I'm a" and typed text */
-  color: var(--skin-color);
+ display: inline-block;
+ font-size: inherit !important;
+ font-weight: inherit !important;
+ line-height: inherit;
+ min-height: 1.8em;       /* Prevent content bounce */
+padding-left: 0.25em;    /* Ensures consistent spacing between "I'm a" and typed text */
+color: var(--skin-color);
 }*/
 
 /* Cursor styling */
 .typed-cursor {
-  font-weight: 300;
-  font-size: inherit;
-  line-height: inherit;
-  color: var(--skin-color);
+font-weight: 300;
+font-size: inherit;
+line-height: inherit;
+color: var(--skin-color);
 }
 
 @media (max-width: 768px) {
-  .shaping-work-card {
-    padding: 1.2rem 1rem;
-  }
+.shaping-work-card {
+padding: 1.2rem 1rem;
+}
 
-  .shaping-work-card h3 {
-    font-size: 1.3rem;
-  }
+.shaping-work-card h3 {
+font-size: 1.3rem;
+}
 
-  .work-columns h4 {
-    font-size: 1.1rem;
-  }
+.work-columns h4 {
+font-size: 1.1rem;
+}
 
-  .work-columns ul {
-    padding-left: 1.2rem;
-  }
+.work-columns ul {
+padding-left: 1.2rem;
+}
 }
 @media (max-width: 900px) {
-  .work-columns {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 1rem;
-  }
+.work-columns {
+display: grid !important;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto;
+gap: 1rem;
+}
 
-  .work-columns > div:nth-child(3) {
-    grid-column: 1 / span 2; /* Full width on 2nd row */
-  }
+.work-columns > div:nth-child(3) {
+grid-column: 1 / span 2; /* Full width on 2nd row */
+}
 }
 
 /* Optional: Stack on very small screens like iPhones SE */
 @media (max-width: 600px) {
-  .work-columns {
-    display: block !important;
-  }
+.work-columns {
+display: block !important;
+}
 
-  .work-columns > div {
-    width: 100% !important;
-    display: block !important;
-    margin-bottom: 1rem;
-  }
+.work-columns > div {
+width: 100% !important;
+display: block !important;
+margin-bottom: 1rem;
+}
 }
 
 
 /* 🎯 FINAL CLEAN & RESPONSIVE HEADER STYLES */
 
 .my-profession {
-  font-size: 30px;
-  font-weight: 600;
-  margin: 15px 0;
-  line-height: 1.4;
-  display: block;         /* Ensure wrapping support */
-  white-space: normal;    /* Allow wrapping */
-  overflow: visible;      /* Prevent clipping */
+font-size: 30px;
+font-weight: 600;
+margin: 15px 0;
+line-height: 1.4;
+display: block;         /* Ensure wrapping support */
+white-space: normal;    /* Allow wrapping */
+overflow: visible;      /* Prevent clipping */
 }
 
 .typing {
-  display: inline;
-  font-size: inherit !important;
-  font-weight: inherit !important;
-  line-height: inherit;
-  color: var(--skin-color);
-  padding-left: 0.25em;       /* Space between 'I'm a' and role */
-  white-space: normal !important;
-  overflow: visible !important;
+display: inline;
+font-size: inherit !important;
+font-weight: inherit !important;
+line-height: inherit;
+color: var(--skin-color);
+padding-left: 0.25em;       /* Space between 'I'm a' and role */
+white-space: normal !important;
+overflow: visible !important;
 }
 
 .typed-cursor {
-  font-size: inherit;
-  color: var(--skin-color);
-  line-height: inherit;
+font-size: inherit;
+color: var(--skin-color);
+line-height: inherit;
 }
 
 /* ✅ Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-  h3.hello {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 1.4;
-  }
+h3.hello {
+font-size: 26px;
+font-weight: 600;
+line-height: 1.4;
+}
 
-  h3.hello .name {
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-  }
+h3.hello .name {
+font-size: inherit;
+font-weight: inherit;
+line-height: inherit;
+}
 
-  .my-profession {
-    font-size: 24px;
-    min-height: 2.8em; /* Reserve space to prevent bounce */
-  }
+.my-profession {
+font-size: 24px;
+min-height: 2.8em; /* Reserve space to prevent bounce */
+}
 
-  .typing {
-    font-size: inherit !important;
-    min-height: 1.4em;
-  }
+.typing {
+font-size: inherit !important;
+min-height: 1.4em;
+}
 }
 
 /* Mobile layout margin fix */
 @media (max-width: 768px) {
-  body,
-  html {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
+body,
+html {
+overflow-x: hidden;
+margin: 0;
+padding: 0;
+}
 
-  .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-  }
+.container {
+padding-left: 15px !important;
+padding-right: 15px !important;
+max-width: 100% !important;
+width: 100% !important;
+margin: 0 auto !important;
+}
 
-  .section {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
+.section {
+padding-left: 15px !important;
+padding-right: 15px !important;
+}
 
-  .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
+.row {
+margin-left: 0 !important;
+margin-right: 0 !important;
+}
 
-  .home .home-info,
-  .text-content {
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
+.home .home-info,
+.text-content {
+max-width: 100% !important;
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
 }
 
 /* Uniform font and spacing for all .work-columns content */
@@ -1415,31 +1415,31 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 .work-columns > div ul,
 .work-columns > div li,
 .work-columns > div p {
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 1.08rem !important;
-  color: #222 !important;
-  line-height: 1.5 !important;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+font-family: 'Poppins', sans-serif !important;
+font-size: 1.08rem !important;
+color: #222 !important;
+line-height: 1.5 !important;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 .work-columns h4 {
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-  font-size: 1.08rem;
-  color: #192841;
+margin-bottom: 0.6rem;
+font-weight: 600;
+font-size: 1.08rem;
+color: #192841;
 }
 
 .work-columns ul {
-  padding-left: 1.2rem;
-  margin-left: 0;
-  list-style-position: outside;
+padding-left: 1.2rem;
+margin-left: 0;
+list-style-position: outside;
 }
 
 .work-columns li {
-  margin-bottom: 0.3rem;
-  list-style-type: disc;
+margin-bottom: 0.3rem;
+list-style-type: disc;
 }
 
 
@@ -1452,9 +1452,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 /* SHAPING-WORKS-SECTION: GRID, FONT, & BULLET FIX */
 /* ============================================= */
 
-/*--- PROFESSIONAL & CONSISTENT "SHAPING WORKS" SECTION FIX ---*/
-
-/* Section container stays as is for width/padding/background */
+/* Force grid container and fix grid-child sizing */
 .shaping-works-section {
   max-width: 1100px;
   margin: 3rem auto;
@@ -1462,9 +1460,10 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   background: #f7f7f7;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  box-sizing: border-box;
+  z-index: 1;
 }
 
-/* Card box, remain clean & soft */
 .shaping-work-card {
   background: #fff;
   border-radius: 14px;
@@ -1472,95 +1471,106 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding: 1.7rem 1.2rem 1.2rem 1.2rem;
   margin-bottom: 2rem;
   transition: box-shadow 0.2s;
-  overflow: hidden;
-  width: 100%;
+  /* Prevents overflow! */
+  overflow: auto;
+  width: 100%; /* Make sure it can't be smaller than grid */
   box-sizing: border-box;
 }
-/* Remove gap below last card */
-.shaping-work-card:last-child { margin-bottom: 0; }
 
-/* Headings - keep hierarchy and pop! */
+.shaping-work-card:last-child {
+  margin-bottom: 0;
+}
+
+/* FONT UNIFICATION: Make all card body and bullets use Poppins! */
+.shaping-work-card,
+.shaping-work-card * {
+  font-family: 'Poppins', sans-serif !important;
+  color: #222 !important;
+  font-size: 1.08rem !important;
+  line-height: 1.5 !important;
+  box-sizing: border-box;
+}
+
+/* Reset h3's and h4's for card titles, then .work-columns for grid */
 .shaping-work-card h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #db0f27;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #db0f27 !important;
   margin-bottom: 1rem;
-  letter-spacing: 0.2px;
-  line-height: 1.25;
-}
-.shaping-work-card h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.07rem;
-  font-weight: 600;
-  color: #192841;
-  margin-bottom: 0.6rem;
-}
-
-.work-meta {
-  font-size: 1.06rem;
-  color: #444;
-  margin-bottom: 1.2rem;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
 }
 
 .work-columns {
-  display: grid;
+  display: grid !important;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 1.2rem;
+  gap: 1.5rem;
   margin-bottom: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 .work-columns > div {
   background: #f7f7f7;
   border-radius: 10px;
+  padding: 1rem 0.8rem 0.8rem 0.8rem;
+  margin-bottom: 0.5rem;
   box-shadow: 0 1px 4px rgba(0,112,243,0.03);
-  padding: 1rem 1.2rem 1rem 1.2rem;
   box-sizing: border-box;
-  min-width: 0;
+  min-width: 0; /* ESSENTIAL for proper grid shrink in mobile! */
   width: 100%;
 }
 
-/* Grid pattern: 2 top, 1 full width below */
-.work-columns > div:nth-child(1) { grid-column: 1; grid-row: 1;}
-.work-columns > div:nth-child(2) { grid-column: 2; grid-row: 1;}
-.work-columns > div:nth-child(3) { grid-column: 1 / span 2; grid-row: 2;}
-
-/* Typography uniformity: inherit site-wide poppins for all text! */
-.work-columns ul,
-.work-columns li,
-.work-columns p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.06rem;
-  color: #232323;
-  line-height: 1.52;
-  font-weight: 400;
+/* First two cards: top row 2 cols; last card: full width second row */
+.work-columns > div:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+.work-columns > div:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.work-columns > div:nth-child(3) {
+  grid-column: 1 / span 2;
+  grid-row: 2;
 }
 
-.work-columns h4 { /* already present above, restates hierarchy*/ }
+/* Bullet fixes for visually clean bullets INSIDE box! */
 .work-columns ul {
-  margin: 0 0 0 1.2rem;
-  padding: 0;
-  list-style-position: inside;
-  list-style-type: disc;
+  margin: 0 0 0 1.3rem !important;
+  padding: 0 !important;
+  list-style-type: disc !important;
+  list-style-position: inside !important; /* ensures bullets inside the box */
   overflow-wrap: anywhere;
 }
+
 .work-columns li {
-  margin-bottom: 0.38rem;
+  margin-bottom: 0.3rem !important;
+  line-height: 1.5;
 }
 
-/* Left indent for summary/why paragraphs for "equal" feeling */
+/* Consistent h4s */
+.work-columns h4 {
+  font-size: 1.1rem !important;
+  margin-bottom: 0.6rem !important;
+  color: #192841 !important;
+  font-weight: 600 !important;
+}
+
+/* The “What I learned/Why it matters” paragraph */
 .work-columns > div:last-child p {
-  padding-left: 1.2rem;
-  margin-top: 0.4rem;
+  padding-left: 1.2rem !important;
+  margin-top: 0.4rem !important;
 }
 
-/* Responsive Layout: stack on phones below 650px */
+/* Responsive: down to one column below 600px */
 @media (max-width: 900px) {
-  .work-columns { gap: 0.7rem; }
+  .work-columns {
+    gap: 1rem;
+  }
 }
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .work-columns {
     display: block !important;
   }
@@ -1568,9 +1578,6 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     width: 100% !important;
     display: block !important;
     margin-bottom: 1rem !important;
-  }
-  .shaping-work-card {
-    padding: 1rem 0.5rem !important;
+    min-width: 0 !important;
   }
 }
-/* --- END FIX --- */
