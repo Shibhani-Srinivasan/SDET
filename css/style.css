@@ -1257,46 +1257,50 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding-left: 1.2rem;
   margin-top: 0.4rem;
 }
-
 .my-profession {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 15px 0;
   line-height: 1.5;
-  /* Optional: Add some space to prevent overlap with following content */
-  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Better for wrapping behavior on mobile */
 }
 
-/* Prevent height shift during Typed.js animation */
+/* Prevent height shift and ensure consistent spacing */
 .typing {
   display: inline-block;
-  min-height: 28px; /* Adjust as needed – match tallest possible text */
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit;
+  min-height: 1.8em;       /* Prevent content bounce */
+  padding-left: 0.25em;    /* Ensures consistent spacing between "I'm a" and typed text */
   white-space: nowrap;
+  color: var(--skin-color);
 }
 
-/* Optional: target cursor */
+/* Cursor styling */
 .typed-cursor {
   font-weight: 300;
-  font-size: 26px;
-  color: var(--skin-color); /* stylize cursor if needed */
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--skin-color);
 }
 
-/* Optional mobile tweak */
+/* Media Query: Mobile Tweak */
 @media (max-width: 768px) {
+  .my-profession {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
   .typing {
-    min-height: 32px; /* slightly taller if mobile layout is taller */
-    font-size: 18px;
+    min-height: 1.8em;
+    font-size: inherit !important;
+    padding-left: 0.25em;
   }
 
   .typed-cursor {
-    font-size: 20px;
+    font-size: inherit;
   }
-
-}
-
-.my-profession {
-  font-size: 30px;        /* Force mobile and desktop to match */
-  font-weight: 600;
-  margin: 15px 0;
-  line-height: 1.4;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
 }
