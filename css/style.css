@@ -1375,3 +1375,40 @@ h3.hello .name {
     padding-left: 1.2rem;
   }
 }
+
+.my-profession {
+  /* Already correct sizing, don't touch: */
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 0 10px 0;
+}
+
+/* Bulletproof: reserve vertical space for the largest line */
+.typing {
+  display: inline-block;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit;
+  padding-left: 0.25em;
+  color: var(--skin-color);
+  white-space: nowrap;
+  min-height: 1.2em;
+  min-width: 0;
+}
+
+/* Mobile: force .my-profession to reserve vertical space */
+@media (max-width: 767px) {
+  .my-profession {
+    font-size: 22px;
+    min-height: 2.8em; /* adjust if your biggest string wraps */
+  }
+  .typing {
+    min-height: 1.4em;
+    font-size: inherit !important;
+  }
+}
+
