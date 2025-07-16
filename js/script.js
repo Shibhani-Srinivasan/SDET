@@ -1,11 +1,22 @@
 /* ============================== typing animation ============================ */
-var typed = new Typed(".typing", {
+/*var typed = new Typed(".typing", {
     strings: ["Test Engineering Manager", "Systems Thinker with a Creative Spine"],
     typeSpeed: 30,
     BackSpeed: 50,
     backDelay: 1000,   
     loop: true
-})
+}) */
+var typed = new Typed(".typing", {
+  strings: [
+    " Test Engineering Manager",
+    " Systems Thinker with a Creative Spine"
+  ],
+  typeSpeed: 50,
+  backSpeed: 30,
+  backDelay: 1000,
+  loop: true
+});
+
 /* ============================== Aside ============================ */
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
