@@ -290,10 +290,10 @@ font-size: 30px;
 font-weight: 700;
 color: var(--skin-color);
 }
-h3.my-profession {
+/*h3.my-profession {
 font-size: 30px;
 margin: 15px 0;
-}
+}*/
 .typing {
 color: var(--skin-color);
 }
@@ -795,11 +795,11 @@ font-size: 25px;
 }
 /* h3.hello, */
 /* h3.hello span, */
-h3.my-profession,
+/* h3.my-profession,
 .home-info p {
 font-size: 30px;
 font-weight: 700;
-}
+}*/
 .home-info p {
 font-size: 15px;
 font-weight: 300;
@@ -1257,27 +1257,24 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding-left: 1.2rem;
   margin-top: 0.4rem;
 }
-.my-profession {
+/*.my-profession {
   font-size: 30px;
   font-weight: 600;
   margin: 15px 0;
   line-height: 1.5;
-  display: flex;
-  flex-wrap: wrap;
   align-items: flex-start; /* Better for wrapping behavior on mobile */
-}
+}*/
 
 /* Prevent height shift and ensure consistent spacing */
-.typing {
+/*.typing {
   display: inline-block;
   font-size: inherit !important;
   font-weight: inherit !important;
   line-height: inherit;
   min-height: 1.8em;       /* Prevent content bounce */
   padding-left: 0.25em;    /* Ensures consistent spacing between "I'm a" and typed text */
-  white-space: nowrap;
   color: var(--skin-color);
-}
+}*/
 
 /* Cursor styling */
 .typed-cursor {
@@ -1287,65 +1284,6 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   color: var(--skin-color);
 }
 
-/* Media Query: Mobile Tweak */
-@media (max-width: 768px) {
-  .my-profession {
-    font-size: 26px;
-    line-height: 1.4;
-  }
-
-  .typing {
-    min-height: 1.8em;
-    font-size: inherit !important;
-    padding-left: 0.25em;
-  }
-
-  .typed-cursor {
-    font-size: inherit;
-  }
-}
-
-/* ——————————————————————————————— */
-/* 🔧 FINAL FIX: Name and Typing Font Match */
-/* ——————————————————————————————— */
-
-/* Style the name "Krishna Shibhani" */
-h3.hello .name {
-  font-size: inherit;
-  font-weight: inherit;
-  color: var(--skin-color);
-  line-height: inherit;
-}
-
-/* Match mobile size for both Hello + Typing line */
-@media (max-width: 767px) {
-  h3.hello {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 1.4;
-  }
-
-  h3.hello .name {
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-  }
-
-  .my-profession {
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 1.4;
-  }
-
-  .typing {
-    font-size: inherit !important;
-    line-height: inherit;
-    padding-left: 0.25em;
-    min-height: 1.8em;
-    white-space: nowrap;
-  }
-
-0}
 
 @media (max-width: 768px) {
   .work-columns {
@@ -1376,39 +1314,56 @@ h3.hello .name {
   }
 }
 
+/* 🎯 FINAL CLEAN & RESPONSIVE HEADER STYLES */
+
 .my-profession {
-  /* Already correct sizing, don't touch: */
   font-size: 30px;
   font-weight: 600;
+  margin: 15px 0;
   line-height: 1.4;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin: 0 0 10px 0;
+  display: block;         /* Ensure wrapping support */
+  white-space: normal;    /* Allow wrapping */
+  overflow: visible;      /* Prevent clipping */
 }
 
-/* Bulletproof: reserve vertical space for the largest line */
 .typing {
-  display: inline-block;
+  display: inline;
   font-size: inherit !important;
   font-weight: inherit !important;
   line-height: inherit;
-  padding-left: 0.25em;
   color: var(--skin-color);
-  white-space: nowrap;
-  min-height: 1.2em;
-  min-width: 0;
+  padding-left: 0.25em;       /* Space between 'I'm a' and role */
+  white-space: normal !important;
+  overflow: visible !important;
 }
 
-/* Mobile: force .my-profession to reserve vertical space */
-@media (max-width: 767px) {
+.typed-cursor {
+  font-size: inherit;
+  color: var(--skin-color);
+  line-height: inherit;
+}
+
+/* ✅ Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  h3.hello {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  h3.hello .name {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
   .my-profession {
-    font-size: 22px;
-    min-height: 2.8em; /* adjust if your biggest string wraps */
+    font-size: 24px;
+    min-height: 2.8em; /* Reserve space to prevent bounce */
   }
+
   .typing {
-    min-height: 1.4em;
     font-size: inherit !important;
+    min-height: 1.4em;
   }
 }
-
