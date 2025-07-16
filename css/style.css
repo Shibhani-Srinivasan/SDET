@@ -797,7 +797,7 @@ font-size: 25px;
 /* h3.hello span, */
 h3.my-profession,
 .home-info p {
-font-size: 25px;
+font-size: 30px;
 font-weight: 700;
 }
 .home-info p {
@@ -1289,7 +1289,14 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     font-size: 20px;
   }
 
-  h3.my-profession {
-    font-size: 22px;
-  }
+}
+
+.my-profession {
+  font-size: 30px;        /* Force mobile and desktop to match */
+  font-weight: 600;
+  margin: 15px 0;
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
