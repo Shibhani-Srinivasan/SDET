@@ -1452,7 +1452,9 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 /* SHAPING-WORKS-SECTION: GRID, FONT, & BULLET FIX */
 /* ============================================= */
 
-/* Force grid container and fix grid-child sizing */
+/*--- PROFESSIONAL & CONSISTENT "SHAPING WORKS" SECTION FIX ---*/
+
+/* Section container stays as is for width/padding/background */
 .shaping-works-section {
   max-width: 1100px;
   margin: 3rem auto;
@@ -1460,10 +1462,9 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   background: #f7f7f7;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  box-sizing: border-box;
-  z-index: 1;
 }
 
+/* Card box, remain clean & soft */
 .shaping-work-card {
   background: #fff;
   border-radius: 14px;
@@ -1471,106 +1472,95 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   padding: 1.7rem 1.2rem 1.2rem 1.2rem;
   margin-bottom: 2rem;
   transition: box-shadow 0.2s;
-  /* Prevents overflow! */
-  overflow: auto;
-  width: 100%; /* Make sure it can't be smaller than grid */
+  overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
 }
+/* Remove gap below last card */
+.shaping-work-card:last-child { margin-bottom: 0; }
 
-.shaping-work-card:last-child {
-  margin-bottom: 0;
-}
-
-/* FONT UNIFICATION: Make all card body and bullets use Poppins! */
-.shaping-work-card,
-.shaping-work-card * {
-  font-family: 'Poppins', sans-serif !important;
-  color: #222 !important;
-  font-size: 1.08rem !important;
-  line-height: 1.5 !important;
-  box-sizing: border-box;
-}
-
-/* Reset h3's and h4's for card titles, then .work-columns for grid */
+/* Headings - keep hierarchy and pop! */
 .shaping-work-card h3 {
-  font-size: 1.5rem !important;
-  font-weight: 700 !important;
-  color: #db0f27 !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #db0f27;
   margin-bottom: 1rem;
-  letter-spacing: 0.3px;
-  line-height: 1.4;
+  letter-spacing: 0.2px;
+  line-height: 1.25;
+}
+.shaping-work-card h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.07rem;
+  font-weight: 600;
+  color: #192841;
+  margin-bottom: 0.6rem;
+}
+
+.work-meta {
+  font-size: 1.06rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
 }
 
 .work-columns {
-  display: grid !important;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 1.5rem;
+  gap: 1.2rem;
   margin-bottom: 1.2rem;
-  width: 100%;
-  box-sizing: border-box;
 }
-
 .work-columns > div {
   background: #f7f7f7;
   border-radius: 10px;
-  padding: 1rem 0.8rem 0.8rem 0.8rem;
-  margin-bottom: 0.5rem;
   box-shadow: 0 1px 4px rgba(0,112,243,0.03);
+  padding: 1rem 1.2rem 1rem 1.2rem;
   box-sizing: border-box;
-  min-width: 0; /* ESSENTIAL for proper grid shrink in mobile! */
+  min-width: 0;
   width: 100%;
 }
 
-/* First two cards: top row 2 cols; last card: full width second row */
-.work-columns > div:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
-}
-.work-columns > div:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-}
-.work-columns > div:nth-child(3) {
-  grid-column: 1 / span 2;
-  grid-row: 2;
+/* Grid pattern: 2 top, 1 full width below */
+.work-columns > div:nth-child(1) { grid-column: 1; grid-row: 1;}
+.work-columns > div:nth-child(2) { grid-column: 2; grid-row: 1;}
+.work-columns > div:nth-child(3) { grid-column: 1 / span 2; grid-row: 2;}
+
+/* Typography uniformity: inherit site-wide poppins for all text! */
+.work-columns ul,
+.work-columns li,
+.work-columns p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.06rem;
+  color: #232323;
+  line-height: 1.52;
+  font-weight: 400;
 }
 
-/* Bullet fixes for visually clean bullets INSIDE box! */
+.work-columns h4 { /* already present above, restates hierarchy*/ }
 .work-columns ul {
-  margin: 0 0 0 1.3rem !important;
-  padding: 0 !important;
-  list-style-type: disc !important;
-  list-style-position: inside !important; /* ensures bullets inside the box */
+  margin: 0 0 0 1.2rem;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: disc;
   overflow-wrap: anywhere;
 }
-
 .work-columns li {
-  margin-bottom: 0.3rem !important;
-  line-height: 1.5;
+  margin-bottom: 0.38rem;
 }
 
-/* Consistent h4s */
-.work-columns h4 {
-  font-size: 1.1rem !important;
-  margin-bottom: 0.6rem !important;
-  color: #192841 !important;
-  font-weight: 600 !important;
-}
-
-/* The “What I learned/Why it matters” paragraph */
+/* Left indent for summary/why paragraphs for "equal" feeling */
 .work-columns > div:last-child p {
-  padding-left: 1.2rem !important;
-  margin-top: 0.4rem !important;
+  padding-left: 1.2rem;
+  margin-top: 0.4rem;
 }
 
-/* Responsive: down to one column below 600px */
+/* Responsive Layout: stack on phones below 650px */
 @media (max-width: 900px) {
-  .work-columns {
-    gap: 1rem;
-  }
+  .work-columns { gap: 0.7rem; }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .work-columns {
     display: block !important;
   }
@@ -1578,7 +1568,9 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     width: 100% !important;
     display: block !important;
     margin-bottom: 1rem !important;
-    min-width: 0 !important;
+  }
+  .shaping-work-card {
+    padding: 1rem 0.5rem !important;
   }
 }
-
+/* --- END FIX --- */
