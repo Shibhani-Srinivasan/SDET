@@ -962,8 +962,8 @@ list-style-type: disc;
 
 
 .work-columns li {
-  margin-bottom: 0.8em !important;  /* ↑ increased space between items */
-  line-height: 1.5;
+margin-bottom: 0.8em !important;  /* ↑ increased space between items */
+line-height: 1.5;
 }
 
 @media (max-width: 900px) {
@@ -1252,20 +1252,20 @@ margin-top: 0.5em;
 /* Indent paragraph in third ("What I learned") box to align with bullets */
 
 /*.my-profession {
- font-size: 30px;
- font-weight: 600;
- margin: 15px 0;
- line-height: 1.5;
- align-items: flex-start; /* Better for wrapping behavior on mobile */
+font-size: 30px;
+font-weight: 600;
+margin: 15px 0;
+line-height: 1.5;
+align-items: flex-start; /* Better for wrapping behavior on mobile */
 }*/
 
 /* Prevent height shift and ensure consistent spacing */
 /*.typing {
- display: inline-block;
- font-size: inherit !important;
- font-weight: inherit !important;
- line-height: inherit;
- min-height: 1.8em;       /* Prevent content bounce */
+display: inline-block;
+font-size: inherit !important;
+font-weight: inherit !important;
+line-height: inherit;
+min-height: 1.8em;       /* Prevent content bounce */
 padding-left: 0.25em;    /* Ensures consistent spacing between "I'm a" and typed text */
 color: var(--skin-color);
 }*/
@@ -1422,6 +1422,17 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+.work-columns ul {
+  padding-left: 1.5em !important;   /* restores indentation */
+  margin: 0 !important;             /* no extra margins */
+  list-style-type: disc !important; /* ensure bullets show */
+  list-style-position: outside !important; /* classic bullet outside */
+}
+
+.work-columns li {
+  padding-left: 0 !important;      /* reset any padded li */
+  margin-bottom: 0.4em !important; /* spacing between list items */
+}
 
 
 .work-columns h4 {
@@ -1450,49 +1461,49 @@ list-style-type: disc;
 /* ✅ FINAL — Polished Shaping Section Styles */
 
 .shaping-work-card {
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
-  padding: 1.7rem 1.2rem;
-  margin-bottom: 2rem;
-  transition: box-shadow 0.2s;
-  box-sizing: border-box;
+background: #fff;
+border-radius: 14px;
+box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+padding: 1.7rem 1.2rem;
+margin-bottom: 2rem;
+transition: box-shadow 0.2s;
+box-sizing: border-box;
 }
 
 .shaping-work-card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #db0f27;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-  font-family: 'Poppins';
+font-size: 1.5rem;
+font-weight: 700;
+color: #db0f27;
+margin-bottom: 1rem;
+line-height: 1.4;
+font-family: 'Poppins';
 }
 
 .work-meta {
-  font-size: 1.05rem;
-  color: #444;
-  margin-bottom: 1.2rem;
-  font-family: 'Poppins';
+font-size: 1.05rem;
+color: #444;
+margin-bottom: 1.2rem;
+font-family: 'Poppins';
 }
 
 .work-columns {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
-  gap: 1.5rem;
-  margin-bottom: 1.2rem;
-  width: 100%;
-  box-sizing: border-box;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto;
+gap: 1.5rem;
+margin-bottom: 1.2rem;
+width: 100%;
+box-sizing: border-box;
 }
 
 .work-columns > div {
-  background: #f7f7f7;
-  border-radius: 10px;
-  padding: 1rem 1.2rem;
-  box-shadow: 0 1px 4px rgba(0, 112, 243, 0.03);
-  box-sizing: border-box;
-  font-family: 'Poppins';
-  color: #222;
+background: #f7f7f7;
+border-radius: 10px;
+padding: 1rem 1.2rem;
+box-shadow: 0 1px 4px rgba(0, 112, 243, 0.03);
+box-sizing: border-box;
+font-family: 'Poppins';
+color: #222;
 }
 
 /* Grid structure */
@@ -1502,45 +1513,45 @@ list-style-type: disc;
 
 /* Headings inside grid cards */
 .work-columns h4 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #192841;
-  margin-bottom: 0.6rem;
-  font-family: 'Poppins';
+font-size: 1.1rem;
+font-weight: 600;
+color: #192841;
+margin-bottom: 0.6rem;
+font-family: 'Poppins';
 }
 
 /* Bullet list cleanup */
 .work-columns ul {
-  margin: 0 0 0 1.2rem;
-  padding: 0;
-  list-style-position: inside;
-  list-style-type: disc;
+margin: 0 0 0 1.2rem;
+padding: 0;
+list-style-position: inside;
+list-style-type: disc;
 }
 
 .work-columns li {
-  margin-bottom: 0.4rem;
-  line-height: 1.5;
-  color: #333;
-  font-size: 1.05rem;
+margin-bottom: 0.4rem;
+line-height: 1.5;
+color: #333;
+font-size: 1.05rem;
 }
 
 /* "What I Learned" paragraph */
 .work-columns > div:last-child p {
-  padding-left: 1.2rem;
-  margin-top: 0.4rem;
-  font-family: 'Poppins';
-  font-size: 1.05rem;
-  color: #333;
+padding-left: 1.2rem;
+margin-top: 0.4rem;
+font-family: 'Poppins';
+font-size: 1.05rem;
+color: #333;
 }
 
 /* Small devices: stack cards */
 @media (max-width: 650px) {
-  .work-columns {
-    display: block;
-  }
+.work-columns {
+display: block;
+}
 
-  .work-columns > div {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+.work-columns > div {
+width: 100%;
+margin-bottom: 1rem;
+}
 }
