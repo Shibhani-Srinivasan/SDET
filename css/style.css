@@ -1422,17 +1422,6 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-.work-columns ul {
-  padding-left: 1.5em !important;   /* restores indentation */
-  margin: 0 !important;             /* no extra margins */
-  list-style-type: disc !important; /* ensure bullets show */
-  list-style-position: outside !important; /* classic bullet outside */
-}
-
-.work-columns li {
-  padding-left: 0 !important;      /* reset any padded li */
-  margin-bottom: 0.4em !important; /* spacing between list items */
-}
 
 
 .work-columns h4 {
