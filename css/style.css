@@ -970,11 +970,6 @@ padding: 1.5rem 1rem;
 margin: 2rem 1rem;
 }
 
-.work-columns {
-flex-direction: column;
-gap: 0.7rem;
-}
-
 .work-columns > div {
 min-width: 0;
 width: 100%;
@@ -1253,10 +1248,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* Indent paragraph in third ("What I learned") box to align with bullets */
-.work-columns > div:nth-child(3) p {
-  padding-left: 1.2rem;
-  margin-top: 0.4rem;
-}
+
 /*.my-profession {
   font-size: 30px;
   font-weight: 600;
@@ -1284,19 +1276,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   color: var(--skin-color);
 }
 
-
 @media (max-width: 768px) {
-  .work-columns {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .work-columns > div {
-    width: 100%;
-    min-width: unset;
-  }
-
   .shaping-work-card {
     padding: 1.2rem 1rem;
   }
@@ -1313,6 +1293,32 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     padding-left: 1.2rem;
   }
 }
+@media (max-width: 900px) {
+  .work-columns {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+
+  .work-columns > div:nth-child(3) {
+    grid-column: 1 / span 2; /* Full width on 2nd row */
+  }
+}
+
+/* Optional: Stack on very small screens like iPhones SE */
+@media (max-width: 600px) {
+  .work-columns {
+    display: block !important;
+  }
+
+  .work-columns > div {
+    width: 100% !important;
+    display: block !important;
+    margin-bottom: 1rem;
+  }
+}
+
 
 /* 🎯 FINAL CLEAN & RESPONSIVE HEADER STYLES */
 
@@ -1401,4 +1407,37 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+
+/* Uniform font and spacing for all .work-columns content */
+.work-columns > div,
+.work-columns > div h4,
+.work-columns > div ul,
+.work-columns > div li,
+.work-columns > div p {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.08rem !important;
+  color: #222 !important;
+  line-height: 1.5 !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.work-columns h4 {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-size: 1.08rem;
+  color: #192841;
+}
+
+.work-columns ul {
+  padding-left: 1.2rem;
+  margin-left: 0;
+  list-style-position: outside;
+}
+
+.work-columns li {
+  margin-bottom: 0.3rem;
+  list-style-type: disc;
 }
