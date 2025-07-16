@@ -1491,7 +1491,7 @@ list-style-type: disc;
   padding: 1rem 1.2rem;
   box-shadow: 0 1px 4px rgba(0, 112, 243, 0.03);
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   color: #222;
 }
 
