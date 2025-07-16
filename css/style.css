@@ -1258,3 +1258,38 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   margin-top: 0.4rem;
 }
 
+.my-profession {
+  line-height: 1.5;
+  /* Optional: Add some space to prevent overlap with following content */
+  margin-bottom: 1rem;
+}
+
+/* Prevent height shift during Typed.js animation */
+.typing {
+  display: inline-block;
+  min-height: 28px; /* Adjust as needed – match tallest possible text */
+  white-space: nowrap;
+}
+
+/* Optional: target cursor */
+.typed-cursor {
+  font-weight: 300;
+  font-size: 26px;
+  color: var(--skin-color); /* stylize cursor if needed */
+}
+
+/* Optional mobile tweak */
+@media (max-width: 768px) {
+  .typing {
+    min-height: 32px; /* slightly taller if mobile layout is taller */
+    font-size: 18px;
+  }
+
+  .typed-cursor {
+    font-size: 20px;
+  }
+
+  h3.my-profession {
+    font-size: 22px;
+  }
+}
