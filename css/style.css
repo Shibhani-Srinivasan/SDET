@@ -960,12 +960,9 @@ line-height: 1.4;         /* ↑ better spacing between lines */
 list-style-type: disc;
 }
 
-.work-columns li {
-margin-bottom: 0.3rem;    /* ↑ more breathing room between points */
-}
 
 .work-columns li {
-  margin-bottom: 0.6em !important;  /* ↑ increased space between items */
+  margin-bottom: 0.8em !important;  /* ↑ increased space between items */
   line-height: 1.5;
 }
 
