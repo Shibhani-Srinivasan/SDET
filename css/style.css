@@ -1045,9 +1045,9 @@ font-weight: 400;
 color: #333;
 padding: 4px 8px;
 border-radius: 8px;
-/*background: rgba(255, 182, 193, 0.2);*/
-  background: rgba(255, 230, 236, 0.6);
-/*background: rgba(255, 255, 255, 0.4);*/
+/*background: rgba(255, 182, 193, 0.2);
+  background: rgba(255, 230, 236, 0.6);*/
+background: rgba(255, 255, 255, 0.6);
 display: inline-block;
 backdrop-filter: blur(3px);
 transition: background 0.3s ease;
@@ -1056,21 +1056,21 @@ transition: background 0.3s ease;
 .tool-items p:hover {
 background: rgba(255, 255, 255, 0.6);
 }
-/* Color themes */
+/* Color themes 
 .pastel-blue    { background: #fdfcfc; }
 .pastel-yellow  { background: #fdfcfc; }
 .pastel-mint    { background: #fdfcfc; }
 .pastel-pink    { background: #f9f1f5; }
 .pastel-lavender{ background: #f7eef2; }
-.pastel-green   { background: #f5eaef; } 
+.pastel-green   { background: #f5eaef; } */
 
-/* Color themes 
+/* Color themes */
 .pastel-blue    { background: #f9f1f5; }
 .pastel-yellow  { background: #f7eef2; }
 .pastel-mint    { background: #f5eaef; }
 .pastel-pink    { background: #f9f1f5; }
 .pastel-lavender{ background: #f7eef2; }
-.pastel-green   { background: #f5eaef; } */
+.pastel-green   { background: #f5eaef; } 
 
 /* Responsive */
 
