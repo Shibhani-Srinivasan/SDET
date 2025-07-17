@@ -1056,15 +1056,21 @@ transition: background 0.3s ease;
 .tool-items p:hover {
 background: rgba(255, 255, 255, 0.6);
 }
-
-
 /* Color themes */
+.pastel-blue    { background: #fdfcfc; }
+.pastel-yellow  { background: #fdfcfc; }
+.pastel-mint    { background: #fdfcfc; }
+.pastel-pink    { background: #f9f1f5; }
+.pastel-lavender{ background: #f7eef2; }
+.pastel-green   { background: #f5eaef; } 
+
+/* Color themes 
 .pastel-blue    { background: #f9f1f5; }
 .pastel-yellow  { background: #f7eef2; }
 .pastel-mint    { background: #f5eaef; }
 .pastel-pink    { background: #f9f1f5; }
 .pastel-lavender{ background: #f7eef2; }
-.pastel-green   { background: #f5eaef; }
+.pastel-green   { background: #f5eaef; } */
 
 /* Responsive */
 
