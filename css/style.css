@@ -170,10 +170,10 @@ font-weight: 700;
 padding: 15px 20px;
 font-size: 30px;
 position: relative;
-font-family: "Poppins", cursive;
+font-family: 'Pacifico', cursive;
 }
 .aside .logo a span {
-font-family: "Pacifico", cursive;
+font-family: 'Pacifico', cursive;
 font-size: 40px;
 }
 .aside .logo a::before {
