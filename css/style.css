@@ -1065,12 +1065,12 @@ background: rgba(255, 255, 255, 0.6);
 .pastel-green   { background: #f5eaef; } */
 
 /* Color themes */
-.pastel-blue    { background: #eeeeee; }
+.pastel-blue    { background: #f1f1f1; }
 .pastel-yellow  { background: #f1f1f1; }
-.pastel-mint    { background: #f9f9f9; }
-.pastel-pink    { background: #eeeeee; }
+.pastel-mint    { background: #f1f1f1; }
+.pastel-pink    { background: #f1f1f1; }
 .pastel-lavender{ background: #f1f1f1; }
-.pastel-green   { background: #f9f9f9; } 
+.pastel-green   { background: #f1f1f1; } 
 
 /* Responsive */
 
