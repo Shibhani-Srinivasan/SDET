@@ -1135,10 +1135,6 @@ gap: 20px; /* Space between rows */
 padding: 20px;
 }
 
-.row {
-display: flex;
-gap: 20px; /* Space between side-by-side boxes */
-}
 
 .box {
 flex: 1;
@@ -1196,10 +1192,6 @@ flex-direction: column;
 gap: 20px;
 }
 
-.row {
-display: flex;
-gap: 20px;
-}
 
 .box {
 flex: 1;
