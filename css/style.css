@@ -648,6 +648,14 @@ max-width: 33.33%;
 margin-bottom: 30px;
 }
 
+.portfolio-item-inner {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 6px solid var(--bg-black-100);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  /* ✅ Ensure NO margins or floats */
+}
 
 /*
 .portfolio-item-inner {
