@@ -117,20 +117,13 @@ top: 100%;
 left: 0;
 margin-top: 8px;
 }
-/*.row {
+.row {
 display: flex;
 flex-wrap: wrap;
 margin-left: -15px;
 margin-right: -15px;
 position: relative;
-}*/
-.row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 20px; /* space between items */
 }
-
-
 .btn {
 font-size: 16px;
 font-weight: 500;
@@ -648,30 +641,12 @@ max-width: 33.33%;
 margin-bottom: 30px;
 }
 
-.portfolio-item-inner {
-  border-radius: 10px;
-  overflow: hidden;
-  border: 6px solid var(--bg-black-100);
-  transition: all 0.3s ease;
-  margin-bottom: 30px;
-  /* ✅ Ensure NO margins or floats */
-}
-
-/*
-.portfolio-item-inner {
-  border-radius: 10px;
-  overflow: hidden;
-  border: 6px solid var(--bg-black-100);
-  transition: all 0.3s ease;
-  margin-bottom: 30px;*/
-}
-
-/*.portfolio .portfolio-item-inner {
+.portfolio .portfolio-item-inner {
 border: 6px solid var(--bg-black-100);
 border-radius: 10px;
 overflow: hidden;
 cursor: pointer;
-} */
+}
 .portfolio .portfolio-item-inner .portfolio-img img {
 width: 100%;
 display: block;
@@ -1071,7 +1046,7 @@ color: #333;
 padding: 4px 8px;
 border-radius: 8px;
 /*background: rgba(255, 182, 193, 0.2);
-  background: rgba(255, 230, 236, 0.6);*/
+ background: rgba(255, 230, 236, 0.6);*/
 background: rgba(255, 255, 255, 0.6);
 display: inline-block;
 backdrop-filter: blur(3px);
@@ -1456,15 +1431,15 @@ padding: 0;
 box-sizing: border-box;
 }
 .work-columns ul {
-  padding-left: 1.5em !important;   /* restores indentation */
-  margin: 0 !important;             /* no extra margins */
-  list-style-type: disc !important; /* ensure bullets show */
-  list-style-position: outside !important; /* classic bullet outside */
+padding-left: 1.5em !important;   /* restores indentation */
+margin: 0 !important;             /* no extra margins */
+list-style-type: disc !important; /* ensure bullets show */
+list-style-position: outside !important; /* classic bullet outside */
 }
 
 .work-columns li {
-  padding-left: 0 !important;      /* reset any padded li */
-  margin-bottom: 0.4em !important; /* spacing between list items */
+padding-left: 0 !important;      /* reset any padded li */
+margin-bottom: 0.4em !important; /* spacing between list items */
 }
 
 
@@ -1588,10 +1563,3 @@ width: 100%;
 margin-bottom: 1rem;
 }
 }
-
-@media (max-width: 768px) {
-  .row {
-    grid-template-columns: 1fr; /* 1 column on small screens */
-  }
-}
-
