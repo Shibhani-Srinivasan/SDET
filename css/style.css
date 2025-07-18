@@ -130,6 +130,7 @@ position: relative;
   gap: 20px; /* space between items */
 }
 
+
 .btn {
 font-size: 16px;
 font-weight: 500;
@@ -646,12 +647,15 @@ flex: 0 0 33.33%;
 max-width: 33.33%;
 margin-bottom: 30px;
 }
+
+
+/*
 .portfolio-item-inner {
   border-radius: 10px;
   overflow: hidden;
   border: 6px solid var(--bg-black-100);
   transition: all 0.3s ease;
-  margin-bottom: 30px;
+  margin-bottom: 30px;*/
 }
 
 /*.portfolio .portfolio-item-inner {
@@ -1576,3 +1580,10 @@ width: 100%;
 margin-bottom: 1rem;
 }
 }
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+
