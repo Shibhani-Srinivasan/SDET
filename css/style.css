@@ -1065,11 +1065,11 @@ background: rgba(255, 255, 255, 0.6);
 .pastel-green   { background: #f5eaef; } */
 
 /* Color themes */
-.pastel-blue    { background: #e5e5e5; }
-.pastel-yellow  { background: #d8d8d8; }
-.pastel-mint    { background: #e3e3e3; }
-.pastel-pink    { background: #ebebeb; }
-.pastel-lavender{ background: #ededed; }
+.pastel-blue    { background: #e3e0e5; }
+.pastel-yellow  { background: #eae2ed; }
+.pastel-mint    { background: #fdf9ff; }
+.pastel-pink    { background: #eee8f1; }
+.pastel-lavender{ background: #fdecea; }
 .pastel-green   { background: #f1f1f1; } 
 
 /* Responsive */
