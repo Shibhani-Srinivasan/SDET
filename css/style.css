@@ -1065,11 +1065,11 @@ background: rgba(255, 255, 255, 0.6);
 .pastel-green   { background: #f5eaef; } */
 
 /* Color themes */
-.pastel-blue    { background: #f9e5e5; }
-.pastel-yellow  { background: #f9e5e5; }
-.pastel-mint    { background: #f9e5e5; }
-.pastel-pink    { background: #fcddda; }
-.pastel-lavender{ background: #fcddda; }
+.pastel-blue    { background: #ffdfdc; }
+.pastel-yellow  { background: #ffe4e2; }
+.pastel-mint    { background: #fcddda; }
+.pastel-pink    { background: #ffdfdc; }
+.pastel-lavender{ background: #ffe4e2; }
 .pastel-green   { background: #fcddda; } 
 
 /* Responsive */
