@@ -1066,10 +1066,10 @@ background: rgba(255, 255, 255, 0.6);
 
 /* Color themes */
 .pastel-blue    { background: #ffdfdc; }
-.pastel-yellow  { background: #ffe4e2; }
-.pastel-mint    { background: #fcddda; }
-.pastel-pink    { background: #ffdfdc; }
-.pastel-lavender{ background: #ffe4e2; }
+.pastel-yellow  { background: #ffdfdc; }
+.pastel-mint    { background: #ffdfdc; }
+.pastel-pink    { background: #fcddda; }
+.pastel-lavender{ background: #fcddda; }
 .pastel-green   { background: #fcddda; } 
 
 /* Responsive */
